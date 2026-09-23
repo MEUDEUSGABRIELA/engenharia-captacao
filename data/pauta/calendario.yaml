@@ -31,7 +31,7 @@ posts:
         rotulo: PCMSO
         destaque: "Olha a\npessoa"
         texto: "Exames e acompanhamento da saúde de quem trabalha exposto a esses riscos."
-    status: pendente  # republicar com a arte nova; a versão de 23.09 foi apagada
+    status: publicado  # 18018185138941975
     legenda: |
       PGR e PCMSO não são a mesma coisa — e ter só um não deixa a empresa em dia.
 
