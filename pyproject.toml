@@ -6,6 +6,7 @@ requires-python = ">=3.12"
 dependencies = [
     "PyYAML>=6.0",
     "Pillow>=10.0",
+    "pillow-heif>=0.16",  # foto de iPhone é HEIC; sem isto o Pillow não abre
     "requests>=2.31",
 ]
 

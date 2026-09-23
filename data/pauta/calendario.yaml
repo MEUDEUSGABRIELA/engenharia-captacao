@@ -21,7 +21,8 @@ posts:
     formato: estatico
     tema: PGR e PCMSO são a mesma coisa?
     titulo: "PGR e PCMSO\nnão são a\nmesma coisa"
-    status: publicado  # 18110851751150209
+    ativo: gabriela-capacete-retrato.jpg
+    status: pendente  # republicar com a arte nova; a versão de 23.09 foi apagada
     legenda: |
       PGR e PCMSO não são a mesma coisa — e ter só um não deixa a empresa em dia.
 
