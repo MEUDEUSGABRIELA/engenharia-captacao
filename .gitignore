@@ -1,0 +1,13 @@
+# Credenciais — regra inviolável 6 do CLAUDE.md
+.env
+
+# Ambiente
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Fotos e vídeos de vistoria: material de cliente, não vai para repositório público
+data/ativos/*
+!data/ativos/LEIA-ME.md

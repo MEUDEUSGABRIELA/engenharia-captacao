@@ -1,0 +1,473 @@
+# Pauta do @meudeusgabrielaengenharia — fonte da verdade do que é publicado.
+# Um post por dia útil. O pilar é fixo por dia da semana (ver kb/pilares-conteudo.md):
+# segunda alerta-legal · terça erro-caro · quarta bastidor · quinta pergunta · sexta servico
+#
+# Campos:
+#   data      (AAAA-MM-DD)  dia da publicação
+#   pilar     alerta-legal | erro-caro | bastidor | pergunta | servico
+#   segmento  sst | civil | ambiental
+#   formato   estatico | carrossel | reels
+#   tema      a promessa do post, em uma linha (não é o título da arte)
+#   titulo    o que vai escrito na arte; \n quebra linha
+#   telas     (carrossel) uma linha por tela, depois da capa
+#   ativo     (bastidor/reels) arquivo em data/ativos/ — sem ele, o dia cai para estatico
+#   legenda   o texto exato que vai ao ar, CTA incluído
+#   status    pendente | publicado
+
+posts:
+  - data: 2026-09-24
+    pilar: pergunta
+    segmento: sst
+    formato: estatico
+    tema: PGR e PCMSO são a mesma coisa?
+    titulo: "PGR e PCMSO\nnão são a\nmesma coisa"
+    status: pendente
+    legenda: |
+      PGR e PCMSO não são a mesma coisa — e ter só um não deixa a empresa em dia.
+
+      O PGR olha o ambiente: identifica os riscos de cada função e define o que vai ser feito com cada um, com prazo e responsável.
+
+      O PCMSO olha a pessoa: exames e acompanhamento da saúde de quem trabalha exposto a esses riscos.
+
+      Um depende do outro. O médico que assina o PCMSO precisa do PGR para saber quais exames pedir. Empresa que tem só um dos dois cumpriu metade da obrigação — e é exatamente a metade que falta que aparece na fiscalização.
+
+      Quer saber o que falta na sua? Chama no WhatsApp (18) 99641-8959.
+
+  - data: 2026-09-25
+    pilar: servico
+    segmento: civil
+    formato: carrossel
+    tema: Quando a prefeitura exige laudo técnico na reforma
+    titulo: "Sua reforma pode\nparar por causa\nde um papel"
+    telas:
+      - "Quando costuma ser exigido:\nmudança de uso, ampliação,\nintervenção em estrutura,\nregularização de construção antiga"
+      - "O que o laudo diz:\no que existe,\nem que estado,\nse suporta o que vai ser feito"
+      - "Sem ele:\nobra embargada,\nhabite-se negado,\nfinanciamento travado"
+      - "Vai reformar?\nFale com a engenheira\nantes de começar\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Ninguém começa uma reforma pensando em documentação. O problema aparece depois, quando a obra já está andando e alguém pede um documento que precisava existir antes.
+
+      Laudo técnico não é burocracia inventada: é um engenheiro registrando, com responsabilidade técnica, o que a edificação aguenta. É ele que sustenta a sua reforma diante da prefeitura, do banco e do comprador.
+
+      Vai reformar ou regularizar? Me manda uma mensagem antes de começar: WhatsApp (18) 99641-8959.
+
+  - data: 2026-09-28
+    pilar: alerta-legal
+    segmento: sst
+    formato: carrossel
+    tema: Quem está dispensado de PGR e quem só acha que está
+    titulo: "\"Minha empresa\né pequena,\nisso não se\naplica a mim\""
+    telas:
+      - "Se aplica quase sempre.\nA NR-1 exige gerenciamento\nde riscos de quem tem\nempregado."
+      - "A dispensa de elaborar\no PGR é exceção,\nnão é a regra."
+      - "Dispensa de elaborar\nnão é dispensa\nde gerenciar risco."
+      - "Não sabe em qual caso\na sua empresa está?\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      "Minha empresa é pequena, isso não se aplica a mim."
+
+      Se aplica quase sempre. A NR-1 é direta: a organização deve implementar o gerenciamento de riscos ocupacionais das suas atividades (item 1.5.3.1), e esse gerenciamento tem que constituir um PGR (item 1.5.3.1.1).
+
+      A dispensa de elaborar o PGR existe, mas é exceção e tem endereço certo:
+
+      MEI está dispensado de elaborar o PGR (item 1.8.1).
+
+      Microempresa e empresa de pequeno porte de grau de risco 1 e 2 ficam dispensadas quando, no levantamento preliminar de perigos, não identificarem exposição a agentes físicos, químicos e biológicos e declararem as informações digitais na forma do item 1.6.1 (item 1.8.4).
+
+      E o que quase ninguém lê: a dispensa alcança só a elaboração do documento — ela não afasta o cumprimento das demais disposições das NRs (item 1.8.5). Se há risco, há obrigação.
+
+      Não sabe em qual caso a sua empresa está? Me chama no WhatsApp (18) 99641-8959 que eu te digo em cinco minutos.
+
+  - data: 2026-09-29
+    pilar: erro-caro
+    segmento: civil
+    formato: carrossel
+    tema: A parede que você não podia derrubar
+    titulo: "O erro mais caro\nde reforma cabe\nnuma frase:\nderrubaram a\nparede errada"
+    telas:
+      - "Parede de vedação\npode sair.\nParede que sustenta\nlaje ou viga, não."
+      - "E ela quase nunca\nse anuncia — em\nconstrução antiga,\nmenos ainda."
+      - "O que aparece depois:\nfissura em diagonal,\nporta que raspa,\npiso de cima cedendo"
+      - "A verificação acontece\nantes da marreta\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      O erro mais caro de reforma cabe numa frase: derrubaram a parede errada.
+
+      Parede de vedação pode sair. Parede que está sustentando laje, viga ou o pavimento de cima, não — e ela quase nunca se anuncia. Em construção antiga, principalmente, a estrutura não está onde a gente espera.
+
+      O que aparece depois: fissura em diagonal no canto das aberturas, porta que passa a raspar, piso do andar de cima cedendo. Quando chega nesse ponto, o conserto custa muitas vezes o valor do laudo que não foi feito.
+
+      A verificação é rápida e acontece antes da marreta. Chama no WhatsApp (18) 99641-8959.
+
+  - data: 2026-09-30
+    pilar: bastidor
+    segmento: civil
+    formato: reels
+    tema: "Vistoria de fissura: o que eu meço antes de dizer se é grave"
+    titulo: "Nem toda fissura\né grave — mas é\no desenho dela\nque diz"
+    ativo: "⟨PENDENTE: vídeo ou foto sua medindo uma fissura, em data/ativos/⟩"
+    status: pendente
+    legenda: |
+      Antes de dizer se uma fissura é grave, eu olho três coisas: a direção (vertical, horizontal ou inclinada), a abertura, e se ela está parada ou ainda se movendo.
+
+      Fissura de retração de revestimento e fissura de recalque de fundação podem parecer iguais para quem mora na casa. Elas não têm o mesmo desfecho nem o mesmo custo.
+
+      O que não dá para fazer é diagnóstico por foto de WhatsApp — e eu vou te dizer isso se você mandar.
+
+      Tem fissura te incomodando? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-01
+    pilar: pergunta
+    segmento: ambiental
+    formato: estatico
+    tema: Meu negócio precisa de licença ambiental?
+    titulo: "Meu negócio\nprecisa de licença\nambiental?\nTeste de 3\nperguntas"
+    status: pendente
+    legenda: |
+      Três perguntas para saber se você deveria estar preocupado:
+
+      1. Sua atividade gera efluente, resíduo industrial, ruído ou emissão?
+      2. Você capta água de poço ou de curso d'água, ou lança alguma coisa nele?
+      3. Você interveio em área de vegetação, margem de córrego ou fez movimentação de terra?
+
+      Um "sim" já coloca a atividade na conversa de licenciamento. O enquadramento exato depende do porte, do potencial poluidor e do órgão competente — e é isso que a análise define, caso a caso.
+
+      O barato é descobrir agora. O caro é descobrir por auto de infração.
+
+      WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-02
+    pilar: servico
+    segmento: sst
+    formato: carrossel
+    tema: Laudo de insalubridade, para que serve e quando a empresa precisa
+    titulo: "Insalubridade não\nse decide no\nachismo"
+    telas:
+      - "Nem pelo que a\nempresa vizinha paga."
+      - "O laudo mede a\nexposição real —\nruído, calor, químicos,\nbiológicos."
+      - "Sem ele: paga-se\nadicional que talvez\nnão seja devido, ou\nnão se paga um que é."
+      - "E ele aponta o que,\nresolvido no ambiente,\nfaz o adicional deixar\nde ser devido."
+      - "Quer avaliar a sua?\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Insalubridade não se decide no achismo, nem pelo que a empresa vizinha paga.
+
+      O laudo técnico é o que mede a exposição real — ruído, calor, agentes químicos, biológicos — e compara com os limites da NR-15 para dizer se existe insalubridade, em que grau, e o que elimina ou neutraliza.
+
+      Por que a empresa deveria querer esse laudo:
+
+      Sem ele, se paga adicional que talvez não seja devido — ou não se paga um que é, e isso volta como passivo trabalhista com juros.
+
+      Ele aponta o que, resolvido no ambiente, faz o adicional deixar de ser devido. Isso é economia recorrente, não despesa.
+
+      Quer avaliar a sua? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-05
+    pilar: alerta-legal
+    segmento: sst
+    formato: carrossel
+    tema: Os 5 documentos que o auditor fiscal do trabalho pede primeiro
+    titulo: "Quando chega\nfiscalização,\na conversa começa\npelos mesmos\n5 documentos"
+    telas:
+      - "1. PGR, com inventário\nde riscos e plano de ação"
+      - "2. PCMSO e os ASOs\ndos empregados"
+      - "3. Treinamentos das NRs\naplicáveis, na validade"
+      - "4. Fichas de entrega\nde EPI, assinadas"
+      - "5. Ordens de serviço\nde segurança"
+      - "Não basta existir:\ntem que estar atualizado\ne coerente entre si\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Quando chega fiscalização do trabalho, a conversa começa por documento — e sempre pelos mesmos.
+
+      1. PGR, com inventário de riscos e plano de ação
+      2. PCMSO e os ASOs dos empregados
+      3. Comprovantes de treinamento das NRs aplicáveis, dentro da validade
+      4. Fichas de entrega de EPI, assinadas
+      5. Ordens de serviço de segurança
+
+      O detalhe que pega quase todo mundo: não basta existir, tem que estar atualizado e coerente entre si. PGR que aponta risco químico e PCMSO sem exame correspondente é inconsistência visível na primeira leitura.
+
+      Quer saber como está a sua antes de alguém aparecer? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-06
+    pilar: erro-caro
+    segmento: sst
+    formato: reels
+    tema: PGR genérico comprado pronto não protege
+    titulo: "Esse PGR não\nprotege a empresa\nque pagou por ele"
+    ativo: "⟨PENDENTE: vídeo curto seu segurando um documento, em data/ativos/⟩"
+    status: pendente
+    legenda: |
+      Existe PGR de tabela: troca o nome da empresa, muda o CNPJ, entrega. Barato e rápido.
+
+      O problema aparece na fiscalização, porque o documento tem que corresponder à empresa real. Função que não existe ali, risco que existe e não está descrito, plano de ação sem prazo nem responsável, inventário que não conversa com o que se vê no chão: tudo isso é visível para quem lê por ofício.
+
+      PGR é documento de responsabilidade técnica, com levantamento de campo por trás. Quando não tem, você pagou por um arquivo, não por proteção.
+
+      Quer que eu olhe o seu? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-07
+    pilar: bastidor
+    segmento: civil
+    formato: reels
+    tema: Um dia de medição em obra
+    titulo: "Medição em obra\nnão é conferir\nse está bonito"
+    ativo: "⟨PENDENTE: vídeo seu medindo em obra, em data/ativos/⟩"
+    status: pendente
+    legenda: |
+      Medição em obra não é conferir se está bonito. É conferir se o que foi executado é o que foi projetado — vão, seção, prumo, nível, cobrimento.
+
+      Cada número que eu anoto aqui vira linha de memória de cálculo ou de laudo depois, com origem rastreável. Dado sem origem não entra em documento técnico assinado — nem aqui, nem em lugar nenhum.
+
+      É esse rastro que sustenta o documento se alguém questionar lá na frente.
+
+      Precisa de acompanhamento técnico na sua obra? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-08
+    pilar: pergunta
+    segmento: civil
+    formato: estatico
+    tema: O que é ART e por que sem ela o projeto não vale
+    titulo: "Sem ART, você não\ncontratou engenharia\n— contratou\num arquivo"
+    status: pendente
+    legenda: |
+      Se o serviço de engenharia que você contratou não tem ART, você não contratou engenharia — contratou um arquivo.
+
+      ART é a Anotação de Responsabilidade Técnica: o registro no CREA que vincula um profissional habilitado àquele serviço específico. É ela que dá validade ao projeto, ao laudo, à execução — e é ela que diz quem responde tecnicamente, inclusive anos depois.
+
+      Onde isso pesa: prefeitura, banco, seguradora, justiça. Todos pedem a ART, não o PDF bonito.
+
+      Como conferir: peça o número da ART e confira no site do CREA do estado. Leva dois minutos e é gratuito.
+
+      Dúvida sobre um documento que te entregaram? Me chama: WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-09
+    pilar: servico
+    segmento: civil
+    formato: carrossel
+    tema: Regularização de imóvel até o habite-se
+    titulo: "Imóvel irregular\nnão financia,\nnão vende bem,\nnão serve de\ngarantia"
+    telas:
+      - "1. Levantamento do que\nexiste de fato, medido\nem campo"
+      - "2. Comparação com o\naprovado e com a matrícula"
+      - "3. Projeto de regularização\ne documentação técnica,\ncom ART"
+      - "4. Protocolo na prefeitura\ne acompanhamento das\nexigências"
+      - "5. Habite-se e averbação\nno cartório"
+      - "A etapa 1 já diz se\no seu caso é simples\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Imóvel irregular não é só um problema com a prefeitura. É imóvel que não financia, não vende bem, não serve de garantia e complica inventário.
+
+      O caminho, em ordem:
+
+      1. Levantamento do que existe de fato, medido em campo
+      2. Comparação com o que está aprovado e com o que a matrícula diz
+      3. Projeto de regularização e documentação técnica, com ART
+      4. Protocolo na prefeitura e acompanhamento das exigências
+      5. Habite-se e averbação no cartório
+
+      Prazo e exigência mudam conforme o município e conforme o que foi construído — quem manda aqui é o código de obras de cada cidade.
+
+      A etapa 1 já responde se o seu caso é simples ou não. WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-12
+    pilar: feriado
+    segmento: nenhum
+    formato: nenhum
+    tema: Feriado — nada no feed, só Stories
+    status: feriado
+    legenda: ""
+
+  - data: 2026-10-13
+    pilar: erro-caro
+    segmento: civil
+    formato: carrossel
+    tema: Comprar imóvel sem laudo — 4 defeitos que só aparecem depois
+    titulo: "4 coisas que não\naparecem na visita\ne aparecem depois\nda escritura"
+    telas:
+      - "1. Fissura ativa tampada\ncom massa e tinta nova"
+      - "2. Infiltração disfarçada\nem tempo seco"
+      - "3. Ampliação sem projeto\n— que vira problema seu"
+      - "4. Instalação elétrica antiga\nsubdimensionada"
+      - "Vistoria antes da compra\ncusta uma fração do imóvel\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Quatro coisas que não aparecem na visita e aparecem depois da escritura:
+
+      1. Fissura ativa tampada com massa e tinta nova
+      2. Infiltração de laje ou de área molhada, disfarçada em tempo seco
+      3. Ampliação sem projeto e sem responsabilidade técnica — que vira problema seu na regularização
+      4. Instalação elétrica antiga subdimensionada para o uso atual
+
+      Uma vistoria técnica antes da compra custa uma fração do imóvel e responde a única pergunta que importa: o que vou ter que gastar nisso depois que for meu?
+
+      Vai fechar negócio? Me chama antes de assinar: WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-14
+    pilar: bastidor
+    segmento: sst
+    formato: reels
+    tema: Como eu avalio ruído e calor num ambiente de trabalho
+    titulo: "\"Aqui é barulhento\"\nnão é medição"
+    ativo: "⟨PENDENTE: vídeo seu com o equipamento de medição, em data/ativos/⟩"
+    status: pendente
+    legenda: |
+      "Aqui é barulhento" não é medição. O que vale é a exposição do trabalhador ao longo da jornada, com equipamento adequado, e a comparação com os limites da norma.
+
+      A mesma lógica vale para calor: não é sensação, é índice medido, com a atividade e o regime de trabalho considerados.
+
+      Por que isso importa para a empresa: a medição é o que define se há adicional devido, o que precisa mudar no ambiente, e o que efetivamente neutraliza a exposição.
+
+      Sua empresa nunca mediu? Esse é o ponto de partida. WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-15
+    pilar: pergunta
+    segmento: sst
+    formato: estatico
+    tema: Insalubridade e periculosidade, qual é a diferença
+    titulo: "Insalubridade e\npericulosidade não\nsão a mesma coisa\n— e a confusão\ncusta caro"
+    status: pendente
+    legenda: |
+      São adicionais diferentes, por motivos diferentes — e a confusão entre os dois custa caro na folha.
+
+      Insalubridade: exposição a agente que faz mal à saúde ao longo do tempo. O adicional incide sobre o salário mínimo da região e é de 40% no grau máximo, 20% no médio e 10% no mínimo (NR-15, itens 15.2 a 15.2.3).
+
+      Periculosidade: atividade de risco acentuado de acidente grave. O adicional é de 30% sobre o salário, sem gratificações, prêmios ou participação nos lucros (NR-16, item 16.2).
+
+      Os dois não se somam: havendo direito aos dois, o empregado opta por um (NR-16, item 16.2.1). E com mais de um fator de insalubridade, considera-se só o de grau mais elevado, vedada a percepção cumulativa (NR-15, item 15.3).
+
+      O que muita empresa não sabe: eliminar ou neutralizar a insalubridade faz cessar o pagamento do adicional (NR-15, item 15.4). É por isso que o laudo costuma se pagar.
+
+      E quem caracteriza ou descaracteriza a periculosidade é laudo técnico de engenheiro de segurança do trabalho ou médico do trabalho (NR-16, item 16.3). Opinião, costume do setor e acordo verbal não sustentam nenhum dos dois.
+
+      Quer a situação real da sua empresa? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-16
+    pilar: servico
+    segmento: ambiental
+    formato: carrossel
+    tema: "Outorga de água: quem precisa e o que acontece sem ela"
+    titulo: "Usar água de poço\nou de córrego pode\nexigir autorização\ndo Estado"
+    telas:
+      - "Outorga é o direito\nde uso da água —\na água é bem público,\nnão é do terreno."
+      - "Costuma alcançar:\npoço, captação em curso\nd'água, lançamento\nde efluente."
+      - "Sem ela: autuação,\nembargo do uso e\nproblema na renovação\nde licença."
+      - "Quer saber se o seu\nuso precisa? \n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Usar água de poço ou de córrego pode exigir autorização do Estado — e muita gente descobre isso na fiscalização.
+
+      Outorga é o direito de uso de recurso hídrico. A água é bem público: ela não pertence ao dono do terreno onde nasce ou passa.
+
+      Costuma alcançar poço, captação em curso d'água e lançamento de efluente. Os casos de dispensa e os limites de vazão são definidos pelo órgão gestor de recursos hídricos do Estado.
+
+      Sem outorga: autuação, embargo do uso e problema na hora de renovar licença.
+
+      Quer saber se o seu uso precisa? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-19
+    pilar: alerta-legal
+    segmento: civil
+    formato: reels
+    tema: "Obra embargada: as primeiras 48 horas"
+    titulo: "Obra embargada:\no que fazer nas\nprimeiras 48 horas"
+    ativo: "⟨PENDENTE: vídeo seu falando à câmera, em data/ativos/⟩"
+    status: pendente
+    legenda: |
+      Obra embargada: o que fazer nas primeiras 48 horas.
+
+      1. Parar de verdade. Continuar trabalhando depois do embargo agrava tudo, inclusive o valor da multa.
+      2. Ler o auto. Ele diz exatamente o que foi apontado — e é isso que precisa ser respondido, não o que você imagina que seja.
+      3. Reunir o que existe: projeto aprovado, alvará, ART, matrícula.
+      4. Chamar um engenheiro antes de responder. A resposta ao auto é técnica e tem prazo.
+
+      O erro mais comum é tentar resolver na conversa informal e perder o prazo do que era formal.
+
+      Aconteceu com você? Me chama hoje: WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-20
+    pilar: erro-caro
+    segmento: sst
+    formato: carrossel
+    tema: Treinamento de NR vencido e o que o eSocial mostra
+    titulo: "Treinamento vencido\nnão é pendência\ninterna — é dado\nque o governo\njá tem"
+    telas:
+      - "Boa parte da informação\nde SST hoje é enviada\nao eSocial."
+      - "Isso significa: inconsistência\nnão espera fiscalização\npresencial para aparecer."
+      - "O que vence e todo mundo\nesquece: treinamento de NR,\nASO, reciclagem."
+      - "Quer conferir a validade\nde tudo de uma vez?\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Treinamento de NR vencido não é pendência interna — é dado que o governo já tem.
+
+      Boa parte da informação de saúde e segurança hoje é enviada ao eSocial. Isso muda a natureza do problema: inconsistência não espera fiscalização presencial para aparecer.
+
+      O que vence e quase todo mundo esquece: treinamento de NR e sua reciclagem, ASO, e a revisão do próprio PGR quando muda processo, máquina ou função.
+
+      Empresa que só descobre o vencimento quando precisa do documento já perdeu o prazo de resolver com calma.
+
+      Quer conferir a validade de tudo de uma vez? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-21
+    pilar: bastidor
+    segmento: ambiental
+    formato: reels
+    tema: "Destinação de resíduo: o que eu confiro numa visita"
+    titulo: "Destinação de\nresíduo: o que eu\nconfiro numa visita"
+    ativo: "⟨PENDENTE: vídeo seu em visita, em data/ativos/⟩"
+    status: pendente
+    legenda: |
+      O que eu confiro quando avalio a gestão de resíduo de uma empresa:
+
+      Onde o resíduo fica enquanto espera a coleta — e se esse lugar é adequado para o que está ali.
+
+      Se a separação existe na prática ou só no papel.
+
+      Quem transporta e quem dá destinação final — e se essas empresas têm licença válida. Contratar transportador irregular não transfere o problema: a responsabilidade continua sendo de quem gerou.
+
+      E o documento que fecha o ciclo, provando onde o resíduo terminou.
+
+      Essa última parte é a que mais falta. Quer organizar isso na sua? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-22
+    pilar: pergunta
+    segmento: civil
+    formato: estatico
+    tema: Quanto custa um laudo, e por que ninguém responde isso sem ver
+    titulo: "\"Quanto custa\num laudo?\"\nA resposta honesta\nincomoda um pouco"
+    status: pendente
+    legenda: |
+      "Quanto custa um laudo?" A resposta honesta incomoda um pouco: depende.
+
+      E depende de coisas concretas, não de conversa de venda: o que precisa ser respondido, o tamanho e a idade do imóvel, se há necessidade de ensaio ou medição, quantas visitas, e para quem o documento vai (prefeitura, banco, justiça e seguradora pedem profundidades diferentes).
+
+      O que eu consigo fazer rápido é te dizer qual documento o seu caso realmente exige. Boa parte das pessoas me procura pedindo um laudo e precisa de outro — ou não precisa de nenhum.
+
+      Me manda o seu caso no WhatsApp (18) 99641-8959 que eu te digo o que se aplica, e aí sim o orçamento faz sentido.
+
+  - data: 2026-10-23
+    pilar: servico
+    segmento: sst
+    formato: carrossel
+    tema: O pacote mínimo de conformidade de uma empresa
+    titulo: "O mínimo que uma\nempresa com\nempregado precisa\nter em dia"
+    telas:
+      - "PGR — o que é risco\naqui dentro e o que\nvai ser feito com ele"
+      - "PCMSO — a saúde de\nquem está exposto\na esses riscos"
+      - "Treinamentos das NRs\naplicáveis, na validade"
+      - "EPI: escolha certa,\nentrega registrada,\nuso fiscalizado"
+      - "Coerência entre eles —\né a primeira coisa\nque se lê"
+      - "Quer um diagnóstico\ndo que falta?\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      O mínimo que uma empresa com empregado precisa ter em dia:
+
+      PGR — o que é risco aqui dentro e o que vai ser feito com cada um, com prazo e responsável.
+      PCMSO — o acompanhamento da saúde de quem está exposto a esses riscos.
+      Treinamentos das NRs aplicáveis à atividade, dentro da validade.
+      EPI — escolha adequada ao risco, entrega registrada e uso fiscalizado.
+
+      E a parte que quase ninguém olha: coerência entre eles. Documento que se contradiz é o que denuncia que nada disso foi feito de verdade.
+
+      Quer um diagnóstico do que falta na sua? WhatsApp (18) 99641-8959.

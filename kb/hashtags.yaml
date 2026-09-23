@@ -1,0 +1,72 @@
+# Blocos de hashtag. O motor monta 12 a 18 por post: sempre o bloco local + o bloco do segmento.
+# Repetir o mesmo conjunto todo dia é padrão que o Instagram trata como spam — por isso o motor
+# sorteia dentro de cada bloco a partir da data (mesma data, mesmo resultado: é reproduzível).
+
+local:
+  fixas:          # entram sempre
+    - presidenteprudente
+    - presidenteprudentesp
+    - oestepaulista
+  rotativas:      # o motor sorteia 3 a 4
+    - regiaodepresidenteprudente
+    - alvaresmachado
+    - pirapozinho
+    - regentefeijo
+    - santoanastacio
+    - martinopolis
+    - presidentevenceslau
+    - rancharia
+    - dracena
+    - adamantina
+    - osvaldocruz
+    - tupa
+    - marilia
+    - assissp
+
+segurancadotrabalho:
+  fixas:
+    - segurancadotrabalho
+    - engenhariadeseguranca
+  rotativas:
+    - pgr
+    - pcmso
+    - nr1
+    - nr35
+    - saudeocupacional
+    - insalubridade
+    - periculosidade
+    - gestaoderiscos
+    - sst
+    - ltcat
+    - medicinadotrabalho
+    - cipa
+
+civil:
+  fixas:
+    - engenhariacivil
+    - laudotecnico
+  rotativas:
+    - regularizacaodeimoveis
+    - habitese
+    - reformaresidencial
+    - patologiadasconstrucoes
+    - vistoriatecnica
+    - art
+    - crea
+    - obraresidencial
+    - construcaocivil
+    - fissuras
+    - infiltracao
+    - vistoriapredial
+
+ambiental:
+  fixas:
+    - engenhariaambiental
+    - licenciamentoambiental
+  rotativas:
+    - meioambiente
+    - outorga
+    - residuossolidos
+    - gestaoambiental
+    - sustentabilidade
+    - licencaambiental

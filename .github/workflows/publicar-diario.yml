@@ -1,0 +1,81 @@
+name: publicar-diario
+
+# Roda de segunda a sexta. O horário do cron é UTC: 14:00 UTC = 11:00 em Brasília (UTC-3),
+# a janela recomendada para o público de empresa em kb/ e no calendário.
+on:
+  schedule:
+    - cron: "0 14 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      data:
+        description: "Data a publicar (AAAA-MM-DD). Vazio = hoje."
+        required: false
+      dry_run:
+        description: "Só montar o pacote, sem publicar"
+        type: boolean
+        default: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # para commitar a arte do dia, que é o que a Meta vai buscar
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fontes para a composição da arte
+        run: sudo apt-get update && sudo apt-get install -y fonts-dejavu-core
+
+      - name: Instalar
+        run: pip install -e .
+
+      - name: Conferir a pauta
+        run: python -m engenharia.publicar --conferir
+
+      - name: Montar o pacote do dia
+        env:
+          TZ: America/Sao_Paulo
+        run: |
+          DATA="${{ github.event.inputs.data }}"
+          if [ -z "$DATA" ]; then DATA=$(TZ=America/Sao_Paulo date +%F); fi
+          echo "DATA=$DATA" >> $GITHUB_ENV
+          python -m engenharia.publicar --data "$DATA" --dry-run
+
+      - name: Publicar a arte para a Meta poder buscar
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          if [ -d "data/saida/$DATA" ]; then
+            git config user.name "motor-de-pauta"
+            git config user.email "motor-de-pauta@users.noreply.github.com"
+            git add -f "data/saida/$DATA"
+            git diff --cached --quiet || git commit -m "arte do dia $DATA"
+            git push
+          fi
+
+      - name: Publicar no Instagram
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          HOSPEDAGEM_BASE: ${{ secrets.HOSPEDAGEM_BASE }}
+          GRAPH_VERSION: ${{ vars.GRAPH_VERSION || 'v21.0' }}
+        run: python -m engenharia.publicar --data "$DATA"
+
+      - name: Registrar o que foi publicado
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git add -f "data/saida/$DATA" data/pauta/calendario.yaml
+          git diff --cached --quiet || git commit -m "log da publicação $DATA"
+          git push
+
+      - name: Guardar o pacote do dia como artefato
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pacote-${{ env.DATA }}
+          path: data/saida/
+          if-no-files-found: ignore
