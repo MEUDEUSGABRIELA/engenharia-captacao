@@ -68,7 +68,7 @@ posts:
   - data: 2026-09-28
     pilar: alerta-legal
     segmento: sst
-    formato: carrossel
+    formato: estatico  # a arte da responsável técnica é uma peça só; a legenda cobre o resto
     tema: Quem está dispensado de PGR e quem só acha que está
     titulo: "\"Minha empresa é pequena,\nisso não se aplica a mim\""
     visual:
@@ -81,11 +81,6 @@ posts:
         rotulo: A EXCEÇÃO
         destaque: "Poucos são\ndispensados"
         texto: "MEI (1.8.1) e ME/EPP de grau 1 e 2 sem exposição declarada (1.8.4) — só do documento."
-    telas:
-      - "Se aplica quase sempre.\nA NR-1 exige gerenciamento\nde riscos de quem tem\nempregado."
-      - "A dispensa de elaborar\no PGR é exceção,\nnão é a regra."
-      - "Dispensa de elaborar\nnão é dispensa\nde gerenciar risco."
-      - "Não sabe em qual caso\na sua empresa está?\n(18) 99641-8959"
     status: pendente
     legenda: |
       "Minha empresa é pequena, isso não se aplica a mim."
