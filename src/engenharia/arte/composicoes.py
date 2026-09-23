@@ -105,34 +105,38 @@ def contraste(imagem: Image.Image, visual: dict, topo: int, base: int) -> None:
     desenho = ImageDraw.Draw(imagem)
     altura_faixa = (base - topo - 40) // 2
 
-    for indice, (chave, cor, marca) in enumerate(
-        (("errado", ERRO, "X"), ("certo", ACERTO, "✓"))
-    ):
+    for indice, (chave, cor) in enumerate((("errado", ERRO), ("certo", ACERTO))):
         bloco = visual.get(chave, {})
         y0 = topo + indice * (altura_faixa + 40)
         desenho.rectangle(
             [MARGEM, y0, LARGURA - MARGEM, y0 + altura_faixa], outline=cor, width=3
         )
         desenho.rectangle([MARGEM, y0, MARGEM + 96, y0 + altura_faixa], fill=cor)
-        fonte_marca = fonte(FORTE, 56)
-        largura_marca = desenho.textlength(marca, font=fonte_marca)
-        desenho.text(
-            (MARGEM + 48 - largura_marca / 2, y0 + altura_faixa / 2 - 38),
-            marca,
-            font=fonte_marca,
-            fill=TINTA,
-        )
 
+        # Os símbolos são desenhados, não escritos: a fonte da identidade não traz o glifo ✓,
+        # e um caractere ausente vira "?" na arte publicada.
+        cx, cy = MARGEM + 48, y0 + altura_faixa // 2
+        if chave == "errado":
+            desenho.line([(cx - 17, cy - 17), (cx + 17, cy + 17)], fill=TINTA, width=8)
+            desenho.line([(cx - 17, cy + 17), (cx + 17, cy - 17)], fill=TINTA, width=8)
+        else:
+            desenho.line(
+                [(cx - 19, cy + 1), (cx - 5, cy + 16), (cx + 20, cy - 16)], fill=TINTA, width=8
+            )
+
+        # O texto é centralizado na faixa, para a caixa não ficar com um vazio embaixo.
         x = MARGEM + 130
         largura_txt = LARGURA - MARGEM - x - 30
-        y = y0 + 30
-        y = _texto_quebrado(
-            desenho, bloco.get("titulo", ""), x, y, largura_txt, TITULO, 52, PAPEL, 1.05
-        )
-        if bloco.get("texto"):
-            _texto_quebrado(
-                desenho, bloco["texto"], x, y + 14, largura_txt, CORPO, 31, APOIO, 1.28
-            )
+        titulo_txt = bloco.get("titulo", "")
+        corpo_txt = bloco.get("texto", "")
+        alto = len(titulo_txt) // 28 * 55 + 55
+        if corpo_txt:
+            alto += (len(corpo_txt) // 44 + 1) * 40 + 14
+        y = y0 + max(24, (altura_faixa - alto) // 2)
+
+        y = _texto_quebrado(desenho, titulo_txt, x, y, largura_txt, TITULO, 52, PAPEL, 1.05)
+        if corpo_txt:
+            _texto_quebrado(desenho, corpo_txt, x, y + 14, largura_txt, CORPO, 31, APOIO, 1.28)
 
 
 def lista(imagem: Image.Image, visual: dict, topo: int, base: int) -> None:

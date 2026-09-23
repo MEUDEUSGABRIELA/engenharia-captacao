@@ -48,7 +48,15 @@ posts:
     segmento: civil
     formato: carrossel
     tema: Quando a prefeitura exige laudo técnico na reforma
-    titulo: "Sua reforma pode\nparar por causa\nde um papel"
+    titulo: "Sua reforma pode parar\npor causa de um papel"
+    visual:
+      tipo: contraste
+      errado:
+        titulo: "Começar sem laudo"
+        texto: "Obra embargada, habite-se negado, financiamento travado — e o custo de parar."
+      certo:
+        titulo: "Laudo antes da obra"
+        texto: "Um engenheiro registra, com responsabilidade técnica, o que a edificação aguenta."
     telas:
       - "Quando costuma ser exigido:\nmudança de uso, ampliação,\nintervenção em estrutura,\nregularização de construção antiga"
       - "O que o laudo diz:\no que existe,\nem que estado,\nse suporta o que vai ser feito"
@@ -67,7 +75,17 @@ posts:
     segmento: sst
     formato: carrossel
     tema: Quem está dispensado de PGR e quem só acha que está
-    titulo: "\"Minha empresa\né pequena,\nisso não se\naplica a mim\""
+    titulo: "\"Minha empresa é pequena,\nisso não se aplica a mim\""
+    visual:
+      tipo: comparacao
+      esquerda:
+        rotulo: A REGRA
+        destaque: "Todo mundo\ngerencia risco"
+        texto: "A organização deve implementar o gerenciamento de riscos das suas atividades (NR-1, item 1.5.3.1)."
+      direita:
+        rotulo: A EXCEÇÃO
+        destaque: "Poucos são\ndispensados"
+        texto: "MEI (1.8.1) e ME/EPP de grau 1 e 2 sem exposição declarada (1.8.4) — só do documento."
     telas:
       - "Se aplica quase sempre.\nA NR-1 exige gerenciamento\nde riscos de quem tem\nempregado."
       - "A dispensa de elaborar\no PGR é exceção,\nnão é a regra."
@@ -94,7 +112,17 @@ posts:
     segmento: civil
     formato: carrossel
     tema: A parede que você não podia derrubar
-    titulo: "O erro mais caro\nde reforma cabe\nnuma frase:\nderrubaram a\nparede errada"
+    titulo: "O erro mais caro de reforma:\nderrubaram a parede errada"
+    visual:
+      tipo: comparacao
+      esquerda:
+        rotulo: VEDAÇÃO
+        destaque: "Pode sair"
+        texto: "Fecha o ambiente, mas não sustenta nada acima dela."
+      direita:
+        rotulo: ESTRUTURAL
+        destaque: "Não pode sair"
+        texto: "Sustenta laje, viga ou o pavimento de cima — e quase nunca se anuncia. Em construção antiga, menos ainda."
     telas:
       - "Parede de vedação\npode sair.\nParede que sustenta\nlaje ou viga, não."
       - "E ela quase nunca\nse anuncia — em\nconstrução antiga,\nmenos ainda."
@@ -178,7 +206,15 @@ posts:
     segmento: sst
     formato: carrossel
     tema: Os 5 documentos que o auditor fiscal do trabalho pede primeiro
-    titulo: "Quando chega\nfiscalização,\na conversa começa\npelos mesmos\n5 documentos"
+    titulo: "O que o auditor fiscal\npede primeiro"
+    visual:
+      tipo: lista
+      itens:
+        - "PGR, com inventário de riscos e plano de ação"
+        - "PCMSO e os ASOs dos empregados"
+        - "Treinamentos das NRs, na validade"
+        - "Fichas de entrega de EPI, assinadas"
+        - "Ordens de serviço de segurança"
     telas:
       - "1. PGR, com inventário\nde riscos e plano de ação"
       - "2. PCMSO e os ASOs\ndos empregados"

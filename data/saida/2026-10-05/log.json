@@ -1,0 +1,21 @@
+{
+  "data": "2026-10-05",
+  "pilar": "alerta-legal",
+  "segmento": "sst",
+  "formato": "carrossel",
+  "tema": "Os 5 documentos que o auditor fiscal do trabalho pede primeiro",
+  "arquivos": [
+    "01-capa.jpg",
+    "02-tela.jpg",
+    "03-tela.jpg",
+    "04-tela.jpg",
+    "05-tela.jpg",
+    "06-tela.jpg",
+    "07-tela.jpg"
+  ],
+  "caracteres_legenda": 810,
+  "avisos": [],
+  "achados": [],
+  "publicado": false,
+  "post_id": null
+}
