@@ -46,7 +46,7 @@ posts:
   - data: 2026-09-25
     pilar: servico
     segmento: civil
-    formato: carrossel
+    formato: estatico  # era carrossel; a arte da Canva é uma peça só e a legenda cobre as telas
     tema: Quando a prefeitura exige laudo técnico na reforma
     titulo: "Sua reforma pode parar\npor causa de um papel"
     visual:
@@ -57,11 +57,6 @@ posts:
       certo:
         titulo: "Laudo antes da obra"
         texto: "Um engenheiro registra, com responsabilidade técnica, o que a edificação aguenta."
-    telas:
-      - "Quando costuma ser exigido:\nmudança de uso, ampliação,\nintervenção em estrutura,\nregularização de construção antiga"
-      - "O que o laudo diz:\no que existe,\nem que estado,\nse suporta o que vai ser feito"
-      - "Sem ele:\nobra embargada,\nhabite-se negado,\nfinanciamento travado"
-      - "Vai reformar?\nFale com a engenheira\nantes de começar\n(18) 99641-8959"
     status: pendente
     legenda: |
       Ninguém começa uma reforma pensando em documentação. O problema aparece depois, quando a obra já está andando e alguém pede um documento que precisava existir antes.
