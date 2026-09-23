@@ -1,0 +1,49 @@
+# Identificadores das fotos da responsável técnica dentro da Canva.
+#
+# Por que este arquivo existe: a Canva permite **usar** um upload, mas não permite **listar** os
+# uploads de uma conta. Sem os identificadores anotados, cada arte nova exigiria pedir à
+# responsável técnica que arrastasse as fotos para dentro de um design de novo, só para poderem
+# ser lidas. Subidos e conferidos em 23.09.2026.
+#
+# Uso: passar o `id` no campo `asset_ids` de `generate-design`, ou em `update_fill` ao trocar a
+# imagem de um design existente.
+
+fotos:
+  - id: MAHWAOKBqzQ
+    arquivo: gabriela-campo-04.jpg
+    descricao: Estúdio, fundo branco liso, segurando o capacete. 550x550.
+    melhor_uso: >
+      A melhor do acervo. Fundo liso permite remover o fundo na Canva e sobrepor à arte, que é o
+      que o feed dela já faz. Serve em qualquer post onde a presença dela ajude.
+
+  - id: MAHWAOINkqk
+    arquivo: gabriela-telhado-drone.jpg
+    descricao: No telhado de galpões industriais, capacete, controle de drone no canto.
+    melhor_uso: Segurança do trabalho, trabalho em altura, medição, bastidor industrial.
+
+  - id: MAHWALztgzw
+    arquivo: gabriela-capacete-retrato.jpg
+    descricao: Retrato próximo com capacete, galpão ao fundo.
+    melhor_uso: Posts de apresentação e de pergunta respondida.
+
+  - id: MAHWABpV-F4
+    arquivo: gabriela-campo-01.jpg
+    descricao: Em obra, terra vermelha e construção ao fundo.
+    melhor_uso: Engenharia civil, acompanhamento de obra, regularização.
+
+  - id: MAHWAN7V1hU
+    arquivo: gabriela-campo-02.jpg
+    descricao: Sob estrutura metálica, agasalho.
+    melhor_uso: Campo, vistoria, estrutura.
+
+  - id: MAHWABFeKUU
+    arquivo: gabriela-campo-05.jpg
+    descricao: Sob estrutura metálica, sorrindo.
+    melhor_uso: Campo, vistoria.
+
+  - id: MAHWAGgNWQ8
+    arquivo: gabriela-campo-03.jpg
+    descricao: Selfie dentro do carro, sem capacete.
+    melhor_uso: >
+      ⟨PENDENTE: a menos útil do acervo — não tem contexto técnico. Vale pedir substituição por uma
+      foto de medição, equipamento ou detalhe de vistoria.⟩
