@@ -12,6 +12,11 @@ dependencies = [
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
+marca = [  # só para regerar templates/logo.png a partir do SVG
+    "svglib>=2.2",
+    "reportlab>=4.0",
+    "rlPyCairo>=0.4",
+]
 
 [build-system]
 requires = ["setuptools>=68"]
