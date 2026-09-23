@@ -72,6 +72,17 @@ py -3.12 -m venv .venv
 .\.venv\Scripts\pip install -e .
 ```
 
+### Configurar as credenciais da Meta
+
+```
+python -m engenharia.configurar --app-id <ID> --app-secret <CHAVE> --token-curto <TOKEN>
+python -m engenharia.configurar --conferir
+```
+
+Troca o token curto pelo de longa duração, descobre o `IG_USER_ID` e escreve o `.env`. A chave
+secreta do app é usada na troca e descartada — ela não é guardada em lugar nenhum. Passo a passo
+completo em `kb/setup-meta.md`.
+
 ### Rodar
 
 ```
