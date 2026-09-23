@@ -1,4 +1,9 @@
-"""Paleta, medidas e fontes da identidade visual. Fonte única para todas as composições."""
+"""Paleta, medidas e fontes da identidade visual.
+
+As cores **não foram inventadas**: saíram do feed que a responsável técnica já publicava e do SVG da
+marca. Verde sobre fundo escuro é o padrão dela; a marca aparece no topo, não escondida no rodapé;
+e o rodapé traz a barra de contato com WhatsApp e @, igual em todo post.
+"""
 
 from __future__ import annotations
 
@@ -11,11 +16,16 @@ from .. import config
 LARGURA, ALTURA = 1080, 1350  # 4:5, o formato que ocupa mais tela no feed
 MARGEM = 84
 
-TINTA = (10, 26, 40)  # azul de prancha, quase preto
-PAPEL = (243, 241, 236)  # off-white de papel técnico
-DESTAQUE = (230, 150, 20)  # âmbar de sinalização
-MALHA = (22, 44, 64)  # linhas da malha sobre a tinta
-APOIO = (150, 172, 190)
+TINTA = (22, 36, 46)  # fundo escuro do feed
+VERDE = (0, 191, 99)  # o verde da marca, tirado do SVG da logo
+PAPEL = (255, 255, 255)
+CREME = (242, 237, 228)
+APOIO = (154, 174, 186)
+GRAFITE = (65, 81, 87)  # cinza da marca, para uso sobre fundo claro
+
+# Mantidos por compatibilidade com composições que ainda citam os nomes antigos.
+DESTAQUE = VERDE
+MALHA = (32, 50, 62)
 
 FONTES = config.RAIZ / "templates" / "fontes"
 TITULO = FONTES / "BarlowCondensed-Bold.ttf"

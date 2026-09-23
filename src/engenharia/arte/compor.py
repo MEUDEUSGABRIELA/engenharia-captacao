@@ -25,7 +25,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 from .. import config
-from . import composicoes
+from . import composicoes, marca
 from .paleta import (
     ALTURA,
     APOIO,
@@ -38,6 +38,7 @@ from .paleta import (
     PAPEL,
     TINTA,
     TITULO,
+    VERDE,
     fonte as _fonte,
 )
 
@@ -125,9 +126,11 @@ def _fundo_de_foto(caminho: Path) -> Image.Image:
 
 
 def _cabecalho(
-    desenho: ImageDraw.ImageDraw, etiqueta: str | None, indice: tuple[int, int] | None
+    desenho: ImageDraw.ImageDraw,
+    etiqueta: str | None,
+    indice: tuple[int, int] | None,
+    y: int = MARGEM,
 ) -> None:
-    y = MARGEM
     if etiqueta:
         fonte_etiqueta = _fonte(FORTE, 27)
         texto = etiqueta.upper()
@@ -182,34 +185,35 @@ def _tela(
         desenho = ImageDraw.Draw(imagem)
         _malha(desenho)
 
-    _cabecalho(desenho, etiqueta, indice)
+    topo_conteudo = marca.lockup(imagem, PAPEL, APOIO)
+    desenho = ImageDraw.Draw(imagem)
+    _cabecalho(desenho, etiqueta, indice, topo_conteudo)
 
-    base = ALTURA - MARGEM - ALTURA_CARIMBO - 46
+    base = ALTURA - marca.ALTURA_RODAPE - 54
     composicao = composicoes.TIPOS.get((visual or {}).get("tipo", ""))
+
+    inicio = topo_conteudo + (78 if etiqueta else 24)
 
     if composicao:
         # Com diagrama, o título é manchete curta no topo e a composição ocupa o corpo.
-        fim_titulo = _escrever_titulo(desenho, titulo, MARGEM + 100, MARGEM + 430, (70, 62, 54, 48))
+        fim_titulo = _escrever_titulo(desenho, titulo, inicio, inicio + 330, (70, 62, 54, 48))
         composicao(imagem, visual or {}, fim_titulo + 54, base)
     elif foto:
         # Sobre foto o texto desce para a faixa escurecida — nunca por cima do rosto.
-        topo_bloco = MARGEM + 150
         fonte_titulo = _fonte(TITULO, 92)
         linhas = []
         for pedaco in titulo.split("\n"):
             linhas += textwrap.wrap(pedaco, width=max(10, int(LARGURA * 2.05 / 92))) or [""]
         altura_total = int(92 * 0.96) * len(linhas)
-        _escrever_titulo(
-            desenho, titulo, max(topo_bloco, base - altura_total - 48), base, (92, 80, 70, 60)
-        )
+        _escrever_titulo(desenho, titulo, max(inicio, base - altura_total - 48), base, (92, 80, 70, 60))
     else:
-        topo_bloco = MARGEM + 150
         _escrever_titulo(
-            desenho, titulo, topo_bloco + max(0, (base - topo_bloco - 300) // 2), base,
+            desenho, titulo, inicio + max(0, (base - inicio - 300) // 2), base,
             (118, 104, 92, 80, 70, 60, 52),
         )
 
-    _carimbo(imagem, carimbo, sobre_foto=foto is not None)
+    marca.barra_contato(imagem)
+    _ = carimbo
     return imagem
 
 

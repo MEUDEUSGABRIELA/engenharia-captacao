@@ -16,7 +16,10 @@ responsavel_tecnica:
     rnp: "2609378327"
 
 empresa:
-  nome: "MEUDEUS Engenharia"
+  # A marca como o feed já a usa: "GABRIELA LIMA" com a linha de especialidades embaixo,
+  # sempre no topo da arte. Conferido nas 24 publicações do perfil em 23.09.2026.
+  nome: "GABRIELA LIMA"
+  linha_especialidades: "ENGENHARIA AMBIENTAL, CIVIL E SEGURANÇA"
   razao_social: "MEUDEUS ENGENHARIA LTDA"
   cnpj: "65.267.561/0001-05"
   registro_crea: "2893082-SP"
@@ -29,7 +32,7 @@ contato:
 perfil:
   handle: "@meudeusgabrielaengenharia"
   # Campo pesquisável do Instagram, diferente do @: carrega a marca e as palavras que o cliente digita.
-  nome_exibicao: "MEUDEUS Engenharia | Laudos e Projetos"
+  nome_exibicao: "Gabriela Lima | Engenharia e Laudos"
   link_bio: "https://wa.me/5518996418959?text=Ol%C3%A1%2C+vim+pelo+Instagram"
 
 # Rodapé composto em toda arte. Duas linhas: a primeira capta, a segunda credencia.
