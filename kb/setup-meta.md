@@ -77,7 +77,20 @@ vencer.
 
 ---
 
-## Bloco 2 — GitHub
+## Bloco 2 — GitHub ✅ concluído em 23.09.2026
+
+- Conta: **MEUDEUSGABRIELA**, autenticada no `gh` com os escopos `repo` e `workflow`.
+- Repositório público: **https://github.com/MEUDEUSGABRIELA/engenharia-captacao**
+- Secret `HOSPEDAGEM_BASE` configurado:
+  `https://raw.githubusercontent.com/MEUDEUSGABRIELA/engenharia-captacao/main`
+- Hospedagem verificada: a URL pública de uma arte devolve `200`, `image/jpeg` — que é o que a
+  Meta precisa conseguir buscar.
+- Workflow executado em modo `dry_run` no runner do GitHub, com sucesso: pauta conferida, arte
+  composta no Linux (fontes DejaVu) e pacote guardado como artefato.
+
+Faltam apenas os secrets `IG_TOKEN` e `IG_USER_ID`, que dependem do Bloco 1.
+
+O histórico abaixo fica registrado para quando for preciso repetir em outra máquina.
 
 ### 🔑 6. Conta e login do CLI
 
