@@ -217,9 +217,39 @@ def _tela(
     return imagem
 
 
+def _artes_prontas(dia: str, destino: Path) -> list[Path]:
+    """Artes já exportadas da Canva para o dia, copiadas para o pacote de saída.
+
+    É o caminho preferido: a arte sai na identidade real da marca, feita a partir dos próprios
+    designs da responsável técnica. A geração em código continua existindo como rede de segurança
+    para o dia que não tiver arte pronta na fila.
+    """
+    pasta = config.ARTES / dia
+    if not pasta.exists():
+        return []
+    origens = sorted(
+        p for p in pasta.iterdir() if p.suffix.lower() in (".png", ".jpg", ".jpeg")
+    )
+    copiadas = []
+    for origem in origens:
+        imagem = Image.open(origem).convert("RGB")
+        arquivo = destino / f"{origem.stem}.jpg"
+        imagem.save(arquivo, quality=93)
+        copiadas.append(arquivo)
+    return copiadas
+
+
 def compor(post: dict, destino: Path) -> tuple[list[Path], list[str]]:
     """Gera as imagens do post. Devolve os arquivos e os avisos do que não deu para usar."""
     avisos: list[str] = []
+    destino.mkdir(parents=True, exist_ok=True)
+
+    prontas = _artes_prontas(str(post.get("data", "")), destino)
+    if prontas:
+        return prontas, avisos
+    avisos.append(
+        f"sem arte pronta em data/artes/{post.get('data')}/ — caiu para a geração em código"
+    )
     rodape = config.identidade()["rodape"]
     carimbo = (rodape["linha_1"], rodape["linha_2"])
     destino.mkdir(parents=True, exist_ok=True)

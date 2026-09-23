@@ -17,6 +17,7 @@ KB = RAIZ / "kb"
 DADOS = RAIZ / "data"
 PAUTA = DADOS / "pauta" / "calendario.yaml"
 ATIVOS = DADOS / "ativos"
+ARTES = DADOS / "artes"  # artes prontas, exportadas da Canva na identidade da marca
 SAIDA = DADOS / "saida"
 
 # Marcadores que impedem publicação (regras invioláveis 2 e 9 do CLAUDE.md).

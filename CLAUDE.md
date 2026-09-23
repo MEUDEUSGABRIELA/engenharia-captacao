@@ -53,6 +53,9 @@ pode ser cobrada como tal.
   é o lastro de toda citação), `hashtags.yaml` (blocos local/SST/civil/ambiental), `setup-meta.md`
   (passo a passo da configuração que só a responsável faz).
 - `data/pauta/calendario.yaml` — a pauta. Fonte da verdade do que é publicado em cada dia.
+- `data/artes/<AAAA-MM-DD>/` — **artes prontas**, exportadas da Canva a partir dos próprios designs
+  da responsável técnica. É o caminho preferido: sai na identidade real da marca. O motor usa o que
+  estiver aqui; só cai para a geração em código quando o dia não tem arte na fila.
 - `data/ativos/` — fotos reais de vistoria e obra, por pilar. Fora do versionamento.
 - `data/saida/<AAAA-MM-DD>/` — pacote do dia: arte final, legenda e `log.json`.
 - `src/engenharia/` — Python: `pauta/` (lê o calendário), `copy/` (legenda e hashtags),
