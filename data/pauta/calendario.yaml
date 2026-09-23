@@ -15,7 +15,7 @@
 #   status    pendente | publicado
 
 posts:
-  - data: 2026-09-24
+  - data: 2026-09-23  # publicado neste dia, um dia antes do previsto, a pedido da responsável
     pilar: pergunta
     segmento: sst
     formato: estatico
@@ -43,7 +43,7 @@ posts:
 
       Quer saber o que falta na sua? Chama no WhatsApp (18) 99641-8959.
 
-  - data: 2026-09-25
+  - data: 2026-09-24  # antecipado de 25/09, para o feed não ficar sem post
     pilar: servico
     segmento: civil
     formato: estatico  # era carrossel; a arte da Canva é uma peça só e a legenda cobre as telas

@@ -1,18 +1,15 @@
 {
   "data": "2026-09-24",
-  "pilar": "pergunta",
-  "segmento": "sst",
+  "pilar": "servico",
+  "segmento": "civil",
   "formato": "estatico",
-  "tema": "PGR e PCMSO são a mesma coisa?",
+  "tema": "Quando a prefeitura exige laudo técnico na reforma",
   "arquivos": [
     "01-capa.jpg"
   ],
-  "caracteres_legenda": 799,
+  "caracteres_legenda": 723,
   "avisos": [],
   "achados": [],
-  "publicado": true,
-  "post_id": "18018185138941975",
-  "urls": [
-    "https://raw.githubusercontent.com/MEUDEUSGABRIELA/engenharia-captacao/main/data/saida/2026-09-24/01-capa.jpg"
-  ]
+  "publicado": false,
+  "post_id": null
 }

@@ -5,10 +5,16 @@
   "formato": "carrossel",
   "tema": "Quem está dispensado de PGR e quem só acha que está",
   "arquivos": [
-    "01-capa.jpg"
+    "01-capa.jpg",
+    "02-tela.jpg",
+    "03-tela.jpg",
+    "04-tela.jpg",
+    "05-tela.jpg"
   ],
   "caracteres_legenda": 1197,
-  "avisos": [],
+  "avisos": [
+    "sem arte pronta em data/artes/2026-09-28/ — caiu para a geração em código"
+  ],
   "achados": [],
   "publicado": false,
   "post_id": null
