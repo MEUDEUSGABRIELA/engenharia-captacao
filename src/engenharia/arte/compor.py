@@ -5,11 +5,16 @@ editável e idêntica todo dia.
 
 A identidade visual é emprestada do desenho técnico, que é a linguagem da própria profissão: malha
 de fundo como papel milimetrado, cota de dimensão marcando o título, e um **carimbo** no rodapé —
-a tarja que toda prancha tem, com responsável, registro e contato em células. É o que diferencia
-este perfil de um cartão de frases com fundo colorido.
+a tarja que toda prancha tem, com marca, responsável, registro e contato em células.
 
-Quando existe foto real do trabalho (`ativo` na pauta), ela é o fundo; quando não existe, a arte é
-de template — e nenhuma foto de obra é inventada.
+**A imagem carrega a ideia.** Um post que compara PGR e PCMSO recebe um diagrama de comparação, não
+uma foto de capacete: nenhuma foto diz "estas duas coisas são diferentes". O campo `visual` da pauta
+escolhe a composição (ver `composicoes.py`). Foto real entra onde a foto *é* o assunto — bastidor,
+campo, equipamento.
+
+Nada aqui depende de banco de imagem, licença ou IA generativa. Além do custo, foto realista de IA
+em perfil técnico custa alcance (a Meta penaliza pessoa gerada sem rótulo) e custa credibilidade,
+que é o ativo de quem assina laudo.
 """
 
 from __future__ import annotations
@@ -17,9 +22,24 @@ from __future__ import annotations
 import textwrap
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
 
 from .. import config
+from . import composicoes
+from .paleta import (
+    ALTURA,
+    APOIO,
+    CORPO,
+    DESTAQUE,
+    FORTE,
+    LARGURA,
+    MALHA,
+    MARGEM,
+    PAPEL,
+    TINTA,
+    TITULO,
+    fonte as _fonte,
+)
 
 try:  # foto de iPhone vem em HEIC, que o Pillow só abre com este registro
     from pillow_heif import register_heif_opener
@@ -28,32 +48,8 @@ try:  # foto de iPhone vem em HEIC, que o Pillow só abre com este registro
 except ImportError:  # pragma: no cover - ambiente sem a dependência opcional
     pass
 
-LARGURA, ALTURA = 1080, 1350  # 4:5, o formato que ocupa mais tela no feed
-MARGEM = 84
-
-TINTA = (10, 26, 40)  # azul de prancha, quase preto
-PAPEL = (243, 241, 236)  # off-white de papel técnico
-DESTAQUE = (230, 150, 20)  # âmbar de sinalização
-MALHA = (22, 44, 64)  # linhas da malha sobre a tinta
-APOIO = (150, 172, 190)
-
-FONTES = config.RAIZ / "templates" / "fontes"
-TITULO = FONTES / "BarlowCondensed-Bold.ttf"
-CORPO = FONTES / "Barlow-Medium.ttf"
-FORTE = FONTES / "Barlow-Bold.ttf"
-
-
-def _fonte(arquivo: Path, tamanho: int) -> ImageFont.FreeTypeFont:
-    if arquivo.exists():
-        return ImageFont.truetype(str(arquivo), tamanho)
-    # Sem a fonte do projeto a arte ainda sai, mas fora da identidade: é erro de instalação.
-    for alternativa in (
-        r"C:\Windows\Fonts\segoeuib.ttf",
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-    ):
-        if Path(alternativa).exists():
-            return ImageFont.truetype(alternativa, tamanho)
-    return ImageFont.load_default(tamanho)
+LOGO = config.RAIZ / "templates" / "logo.png"
+ALTURA_CARIMBO = 108
 
 
 def _malha(desenho: ImageDraw.ImageDraw, passo: int = 54) -> None:
@@ -74,31 +70,28 @@ def _cota(desenho: ImageDraw.ImageDraw, y: int, largura: int = 210) -> None:
         )
 
 
-LOGO = config.RAIZ / "templates" / "logo.png"
-
-
 def _carimbo(imagem: Image.Image, linhas: tuple[str, str], sobre_foto: bool) -> None:
-    """O carimbo da prancha: tarja com células e a logo, no rodapé."""
+    """O carimbo da prancha: tarja com células e a marca, no rodapé."""
     desenho = ImageDraw.Draw(imagem)
-    altura = 108
-    topo = ALTURA - MARGEM - altura
+    topo = ALTURA - MARGEM - ALTURA_CARIMBO
     direita = LARGURA - MARGEM
 
     if sobre_foto:
-        desenho.rectangle([MARGEM, topo, direita, topo + altura], fill=TINTA)
-    desenho.rectangle([MARGEM, topo, direita, topo + altura], outline=APOIO, width=2)
-    desenho.rectangle([MARGEM, topo, MARGEM + 14, topo + altura], fill=DESTAQUE)
+        desenho.rectangle([MARGEM, topo, direita, topo + ALTURA_CARIMBO], fill=TINTA)
+    desenho.rectangle([MARGEM, topo, direita, topo + ALTURA_CARIMBO], outline=APOIO, width=2)
+    desenho.rectangle([MARGEM, topo, MARGEM + 14, topo + ALTURA_CARIMBO], fill=DESTAQUE)
 
     texto_x = MARGEM + 34
     if LOGO.exists():
-        # A logo ocupa a célula da esquerda; o texto desloca para a direita dela.
         logo = Image.open(LOGO).convert("RGBA")
-        lado = altura - 28
+        lado = ALTURA_CARIMBO - 28
         logo.thumbnail((lado, lado), Image.LANCZOS)
-        imagem.paste(logo, (texto_x, topo + (altura - logo.height) // 2), logo)
+        imagem.paste(logo, (texto_x, topo + (ALTURA_CARIMBO - logo.height) // 2), logo)
         texto_x += logo.width + 26
         desenho.line(
-            [(texto_x - 13, topo + 12), (texto_x - 13, topo + altura - 12)], fill=APOIO, width=2
+            [(texto_x - 13, topo + 12), (texto_x - 13, topo + ALTURA_CARIMBO - 12)],
+            fill=APOIO,
+            width=2,
         )
 
     desenho.line([(texto_x - 13, topo + 58), (direita, topo + 58)], fill=APOIO, width=2)
@@ -107,7 +100,7 @@ def _carimbo(imagem: Image.Image, linhas: tuple[str, str], sobre_foto: bool) -> 
 
 
 def _fundo_de_foto(caminho: Path) -> Image.Image:
-    """Foto real recortada para 4:5, escurecida para o texto ter contraste."""
+    """Foto real recortada para 4:5, escurecida na faixa onde o texto entra."""
     foto = Image.open(caminho).convert("RGB")
     proporcao = max(LARGURA / foto.width, ALTURA / foto.height)
     novo = (int(foto.width * proporcao) + 1, int(foto.height * proporcao) + 1)
@@ -118,7 +111,6 @@ def _fundo_de_foto(caminho: Path) -> Image.Image:
     topo = int((foto.height - ALTURA) * 0.25)
     foto = foto.crop((esquerda, topo, esquerda + LARGURA, topo + ALTURA))
 
-    # O véu escurece só a faixa de baixo, onde o texto vai. O rosto fica limpo em cima.
     veu = Image.new("RGBA", (LARGURA, ALTURA), (0, 0, 0, 0))
     desenho = ImageDraw.Draw(veu)
     inicio = int(ALTURA * 0.42)
@@ -132,12 +124,55 @@ def _fundo_de_foto(caminho: Path) -> Image.Image:
     return Image.alpha_composite(foto.convert("RGBA"), veu).convert("RGB")
 
 
+def _cabecalho(
+    desenho: ImageDraw.ImageDraw, etiqueta: str | None, indice: tuple[int, int] | None
+) -> None:
+    y = MARGEM
+    if etiqueta:
+        fonte_etiqueta = _fonte(FORTE, 27)
+        texto = etiqueta.upper()
+        largura_texto = desenho.textbbox((0, 0), texto, font=fonte_etiqueta)[2]
+        desenho.rectangle([MARGEM, y, MARGEM + largura_texto + 40, y + 52], fill=DESTAQUE)
+        desenho.text((MARGEM + 20, y + 11), texto, font=fonte_etiqueta, fill=TINTA)
+    if indice:
+        atual, total = indice
+        fonte_indice = _fonte(CORPO, 28)
+        texto = f"{atual:02d}/{total:02d}"
+        largura_texto = desenho.textbbox((0, 0), texto, font=fonte_indice)[2]
+        desenho.text(
+            (LARGURA - MARGEM - largura_texto, y + 14), texto, font=fonte_indice, fill=APOIO
+        )
+
+
+def _escrever_titulo(
+    desenho: ImageDraw.ImageDraw, titulo: str, topo: int, limite: int, tamanhos: tuple[int, ...]
+) -> int:
+    """Escreve o título encolhendo até caber. Devolve o y logo abaixo dele."""
+    for tamanho in tamanhos:
+        fonte_titulo = _fonte(TITULO, tamanho)
+        largura_em_caracteres = max(10, int(LARGURA * 2.05 / tamanho))
+        linhas: list[str] = []
+        for pedaco in titulo.split("\n"):
+            linhas += textwrap.wrap(pedaco, width=largura_em_caracteres) or [""]
+        altura_linha = int(tamanho * 0.96)
+        if altura_linha * len(linhas) <= limite - topo - 52:
+            break
+
+    _cota(desenho, topo)
+    y = topo + 48
+    for linha in linhas:
+        desenho.text((MARGEM, y), linha, font=fonte_titulo, fill=PAPEL)
+        y += altura_linha
+    return y
+
+
 def _tela(
     titulo: str,
     carimbo: tuple[str, str],
     foto: Path | None = None,
     etiqueta: str | None = None,
     indice: tuple[int, int] | None = None,
+    visual: dict | None = None,
 ) -> Image.Image:
     if foto:
         imagem = _fundo_de_foto(foto)
@@ -147,48 +182,32 @@ def _tela(
         desenho = ImageDraw.Draw(imagem)
         _malha(desenho)
 
-    y = MARGEM
+    _cabecalho(desenho, etiqueta, indice)
 
-    if etiqueta:
-        fonte_etiqueta = _fonte(FORTE, 27)
-        texto = etiqueta.upper()
-        largura_texto = desenho.textbbox((0, 0), texto, font=fonte_etiqueta)[2]
-        desenho.rectangle([MARGEM, y, MARGEM + largura_texto + 40, y + 52], fill=DESTAQUE)
-        desenho.text((MARGEM + 20, y + 11), texto, font=fonte_etiqueta, fill=TINTA)
+    base = ALTURA - MARGEM - ALTURA_CARIMBO - 46
+    composicao = composicoes.TIPOS.get((visual or {}).get("tipo", ""))
 
-    if indice:
-        atual, total = indice
-        fonte_indice = _fonte(CORPO, 28)
-        texto = f"{atual:02d}/{total:02d}"
-        largura_texto = desenho.textbbox((0, 0), texto, font=fonte_indice)[2]
-        desenho.text((LARGURA - MARGEM - largura_texto, y + 14), texto, font=fonte_indice, fill=APOIO)
-
-    # O título ocupa o bloco central. Encolhe até caber, sem nunca cortar palavra.
-    topo_bloco = MARGEM + 150
-    fundo_bloco = ALTURA - MARGEM - 108 - 116
-    disponivel = fundo_bloco - topo_bloco
-
-    for tamanho in (118, 104, 92, 80, 70, 60, 52):
-        fonte = _fonte(TITULO, tamanho)
-        largura_em_caracteres = max(10, int(LARGURA * 2.05 / tamanho))
+    if composicao:
+        # Com diagrama, o título é manchete curta no topo e a composição ocupa o corpo.
+        fim_titulo = _escrever_titulo(desenho, titulo, MARGEM + 100, MARGEM + 430, (70, 62, 54, 48))
+        composicao(imagem, visual or {}, fim_titulo + 54, base)
+    elif foto:
+        # Sobre foto o texto desce para a faixa escurecida — nunca por cima do rosto.
+        topo_bloco = MARGEM + 150
+        fonte_titulo = _fonte(TITULO, 92)
         linhas = []
         for pedaco in titulo.split("\n"):
-            linhas += textwrap.wrap(pedaco, width=largura_em_caracteres) or [""]
-        altura_linha = int(tamanho * 0.96)
-        if altura_linha * len(linhas) <= disponivel - 52:
-            break
-
-    altura_total = altura_linha * len(linhas)
-    if foto:
-        # Sobre foto o texto desce para a faixa escurecida — nunca por cima do rosto.
-        y = fundo_bloco - altura_total
+            linhas += textwrap.wrap(pedaco, width=max(10, int(LARGURA * 2.05 / 92))) or [""]
+        altura_total = int(92 * 0.96) * len(linhas)
+        _escrever_titulo(
+            desenho, titulo, max(topo_bloco, base - altura_total - 48), base, (92, 80, 70, 60)
+        )
     else:
-        y = topo_bloco + max(0, (disponivel - altura_total - 52) // 2)
-    _cota(desenho, y)
-    y += 48
-    for linha in linhas:
-        desenho.text((MARGEM, y), linha, font=fonte, fill=PAPEL)
-        y += altura_linha
+        topo_bloco = MARGEM + 150
+        _escrever_titulo(
+            desenho, titulo, topo_bloco + max(0, (base - topo_bloco - 300) // 2), base,
+            (118, 104, 92, 80, 70, 60, 52),
+        )
 
     _carimbo(imagem, carimbo, sobre_foto=foto is not None)
     return imagem
@@ -212,6 +231,13 @@ def compor(post: dict, destino: Path) -> tuple[list[Path], list[str]]:
     elif ativo:
         avisos.append("ativo pendente — a arte saiu de template, sem foto real")
 
+    visual = post.get("visual")
+    if visual and foto:
+        avisos.append("post tem visual e foto; a foto foi ignorada em favor do diagrama")
+        foto = None
+    if not visual and not foto and post.get("formato") != "carrossel":
+        avisos.append("post sem visual nem foto — a capa saiu só com tipografia")
+
     ficha = config.segmentos().get(post.get("segmento", ""))
     etiqueta = ficha["etiqueta"] if ficha else None
 
@@ -225,6 +251,7 @@ def compor(post: dict, destino: Path) -> tuple[list[Path], list[str]]:
         foto,
         etiqueta,
         (1, total) if telas else None,
+        visual,
     ).save(arquivos[0], quality=93)
 
     for indice, texto in enumerate(telas, start=2):

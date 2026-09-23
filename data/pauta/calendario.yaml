@@ -20,8 +20,17 @@ posts:
     segmento: sst
     formato: estatico
     tema: PGR e PCMSO são a mesma coisa?
-    titulo: "PGR e PCMSO\nnão são a\nmesma coisa"
-    ativo: gabriela-capacete-retrato.jpg
+    titulo: "PGR e PCMSO\nnão são a mesma coisa"
+    visual:
+      tipo: comparacao
+      esquerda:
+        rotulo: PGR
+        destaque: "Olha o\nambiente"
+        texto: "Identifica os riscos de cada função e define o que será feito com cada um, com prazo e responsável."
+      direita:
+        rotulo: PCMSO
+        destaque: "Olha a\npessoa"
+        texto: "Exames e acompanhamento da saúde de quem trabalha exposto a esses riscos."
     status: pendente  # republicar com a arte nova; a versão de 23.09 foi apagada
     legenda: |
       PGR e PCMSO não são a mesma coisa — e ter só um não deixa a empresa em dia.
