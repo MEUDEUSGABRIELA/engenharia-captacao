@@ -59,6 +59,36 @@ civil:
     - infiltracao
     - vistoriapredial
 
+pericia:
+  fixas:
+    - periciajudicial
+    - assistentetecnico
+  rotativas:
+    - pericia
+    - direitoimobiliario
+    - advocacia
+    - processojudicial
+    - laudopericial
+    - engenhariadiagnostica
+    - direitodaconstrucao
+    - vicioconstrutivo
+
+avaliacao:
+  fixas:
+    - avaliacaodeimoveis
+    - laudodeavaliacao
+  rotativas:
+    - nbr14653
+    - valordemercado
+    - financiamentoimobiliario
+    - inventario
+    - imobiliaria
+    - corretordeimoveis
+    - imovelrural
+    - partilha
+    - usucapiao
+    - desapropriacao
+
 ambiental:
   fixas:
     - engenhariaambiental

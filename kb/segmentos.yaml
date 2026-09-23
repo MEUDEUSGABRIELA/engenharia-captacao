@@ -1,0 +1,39 @@
+# Os segmentos do perfil: quem é o público, como a arte etiqueta e de onde saem as hashtags.
+# Fonte única — o código lê daqui, não tem mapa de segmento escrito em .py.
+#
+# `peso` é a participação pretendida na pauta, em %. Soma 100.
+
+sst:
+  etiqueta: "segurança do trabalho"
+  bloco_hashtag: segurancadotrabalho
+  peso: 30
+  publico: "Empresa com empregado — indústria, comércio, construtora, condomínio"
+  compra: "Conformidade: PGR, PCMSO, laudos de insalubridade e periculosidade, LTCAT, treinamentos"
+
+civil:
+  etiqueta: "engenharia civil"
+  bloco_hashtag: civil
+  peso: 30
+  publico: "Dono de obra e de imóvel, construtora, arquiteto"
+  compra: "Laudo de edificação, vistoria de patologia, regularização, cálculo estrutural, projeto"
+
+pericia:
+  etiqueta: "perícia judicial"
+  bloco_hashtag: pericia
+  peso: 15
+  publico: "Advogado, escritório de advocacia, parte em processo"
+  compra: "Perícia judicial (por nomeação do juízo) e assistência técnica (contratada pela parte)"
+
+avaliacao:
+  etiqueta: "avaliação de imóveis"
+  bloco_hashtag: avaliacao
+  peso: 15
+  publico: "Banco, corretor, imobiliária, inventariante, comprador e vendedor"
+  compra: "Laudo de avaliação conforme NBR 14653 — urbano, rural, involutivo, evolutivo"
+
+ambiental:
+  etiqueta: "engenharia ambiental"
+  bloco_hashtag: ambiental
+  peso: 10
+  publico: "Empresa e produtor rural"
+  compra: "Licenciamento, outorga, gestão de resíduos, estudos e laudos ambientais"

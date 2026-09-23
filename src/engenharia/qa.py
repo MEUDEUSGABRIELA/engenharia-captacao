@@ -10,8 +10,12 @@ from . import config
 
 PILARES = {"alerta-legal", "erro-caro", "bastidor", "pergunta", "servico", "feriado"}
 FORMATOS = {"estatico", "carrossel", "reels", "nenhum"}
-SEGMENTOS = {"sst", "civil", "ambiental", "nenhum"}
 LIMITE_LEGENDA = 2200  # limite do Instagram, hashtags incluídas
+
+
+def segmentos_validos() -> set[str]:
+    """Os segmentos de `kb/segmentos.yaml`, mais `nenhum` para os dias de feriado."""
+    return set(config.segmentos()) | {"nenhum"}
 
 
 def conferir_post(post: dict) -> list[str]:
@@ -24,7 +28,7 @@ def conferir_post(post: dict) -> list[str]:
         achados.append(f"pilar desconhecido: {post.get('pilar')!r}")
     if post.get("formato") not in FORMATOS:
         achados.append(f"formato desconhecido: {post.get('formato')!r}")
-    if post.get("segmento") not in SEGMENTOS:
+    if post.get("segmento") not in segmentos_validos():
         achados.append(f"segmento desconhecido: {post.get('segmento')!r}")
     if post.get("formato") == "carrossel" and not post.get("telas"):
         achados.append("carrossel sem telas")

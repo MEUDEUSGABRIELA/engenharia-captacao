@@ -11,6 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from collections import Counter
 from datetime import date
 
 from . import config, qa
@@ -49,7 +50,27 @@ def _conferir_pauta_inteira() -> int:
                 print(f"  - {dia}: {motivo}")
     else:
         print("Todas as legendas estão liberadas para publicação.")
+
+    _relatar_mix(posts)
     return 0
+
+
+def _relatar_mix(posts: list[dict]) -> None:
+    """Mix de segmentos do que ainda vai ao ar, contra o peso pretendido em kb/segmentos.yaml.
+
+    Desvio aqui não é erro — é decisão editorial a tomar. Por isso sai como relatório, não achado.
+    """
+    pendentes = [post for post in posts if post.get("status") == "pendente"]
+    if not pendentes:
+        return
+    fichas = config.segmentos()
+    contagem = Counter(post.get("segmento") for post in pendentes)
+    print(f"\nMix do que ainda vai ao ar ({len(pendentes)} posts), contra o peso do kb:")
+    for segmento, ficha in fichas.items():
+        real = round(100 * contagem.get(segmento, 0) / len(pendentes))
+        alvo = ficha.get("peso", 0)
+        sinal = "ok" if abs(real - alvo) <= 5 else "desvio"
+        print(f"  {segmento:11} {contagem.get(segmento, 0):2} posts  {real:3}%  (alvo {alvo}%)  {sinal}")
 
 
 def executar(dia: str, dry_run: bool, forcar: bool) -> int:

@@ -471,3 +471,464 @@ posts:
       E a parte que quase ninguém olha: coerência entre eles. Documento que se contradiz é o que denuncia que nada disso foi feito de verdade.
 
       Quer um diagnóstico do que falta na sua? WhatsApp (18) 99641-8959.
+
+  # --- A partir daqui entram os segmentos de perícia e avaliação de imóveis ---
+
+  - data: 2026-10-26
+    pilar: alerta-legal
+    segmento: sst
+    formato: carrossel
+    tema: Acidente de trabalho, as primeiras 24 horas da empresa
+    titulo: "Aconteceu um\nacidente. O que a\nempresa faz nas\nprimeiras 24 horas"
+    telas:
+      - "1. Socorro e preservação\ndo local, quando possível"
+      - "2. Emissão da CAT —\nela não é admissão de\nculpa, é obrigação"
+      - "3. Registro do que\naconteceu, com fotos\ne testemunhas"
+      - "4. Análise do acidente:\no que falhou no controle\nde risco, não quem errou"
+      - "5. Revisão do PGR à luz\ndo que aconteceu"
+      - "Precisa de apoio técnico\nnessa hora?\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Aconteceu um acidente. O que a empresa faz nas primeiras 24 horas decide o tamanho do problema depois.
+
+      1. Socorro primeiro, e preservação do local sempre que for possível sem risco a ninguém.
+      2. Emissão da CAT. Emitir CAT não é admitir culpa — é obrigação, e a ausência dela costuma pesar mais que o acidente.
+      3. Registro do que aconteceu: fotos, testemunhas, condição do equipamento, o que estava sendo feito.
+      4. Análise do acidente com foco no que falhou no controle de risco. "Distração do funcionário" não é causa: é onde a investigação para cedo demais.
+      5. Revisão do PGR à luz do que aconteceu. Acidente é informação sobre o seu gerenciamento de riscos.
+
+      O que acontece na prática: a empresa descobre nessa hora que o risco que se concretizou não estava no inventário.
+
+      Precisa de apoio técnico nessa hora? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-27
+    pilar: erro-caro
+    segmento: civil
+    formato: carrossel
+    tema: Contratar obra sem projeto e sem contrato
+    titulo: "Obra sem projeto e\nsem contrato: o que\nsobra para você"
+    telas:
+      - "Sem projeto, o preço\nnão é comparável —\ncada orçamento está\nfalando de outra obra"
+      - "Sem contrato, prazo e\nescopo são memória,\ne memória muda"
+      - "Aditivo vira regra:\n\"isso não estava\ncombinado\""
+      - "E se der problema\nestrutural depois,\nnão há responsável\ntécnico a chamar"
+      - "Projeto e ART custam\numa fração do aditivo\nque eles evitam\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Obra sem projeto e sem contrato: o que sobra para você.
+
+      Sem projeto, os orçamentos não são comparáveis — cada um está falando de uma obra diferente, e o de menor preço costuma ser o que entendeu menos do serviço.
+
+      Sem contrato, prazo e escopo viram memória. E memória muda de lado conforme a obra atrasa.
+
+      Aí o aditivo deixa de ser exceção: "isso não estava combinado" passa a ser a frase da semana.
+
+      E o pior, que só aparece anos depois: se houver problema estrutural, não existe responsável técnico a chamar. Sem ART, não há a quem responsabilizar.
+
+      Projeto e ART custam uma fração do primeiro aditivo que eles evitam.
+
+      Vai contratar? Me chama antes de assinar: WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-28
+    pilar: bastidor
+    segmento: avaliacao
+    formato: reels
+    tema: "Vistoria de avaliação: o que eu fotografo e por quê"
+    titulo: "Numa avaliação, a foto\nnão é lembrança —\né prova"
+    ativo: "⟨PENDENTE: vídeo seu em vistoria de avaliação, em data/ativos/⟩"
+    status: pendente
+    legenda: |
+      Numa vistoria de avaliação, a foto não é lembrança: é o que sustenta cada característica que vai entrar no laudo.
+
+      O que eu registro, sempre: padrão construtivo e estado de conservação, área e o que confere (ou não) com a documentação, benfeitorias que agregam valor, e o que deprecia — umidade, fissura, instalação antiga.
+
+      E registro também o entorno, porque localização não é endereço: é infraestrutura, uso predominante da via e o que existe a quem caminha dali.
+
+      Cada um desses itens vira uma variável na pesquisa de mercado. Laudo de avaliação sem lastro de vistoria é opinião com capa bonita.
+
+      Precisa de um laudo de avaliação? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-29
+    pilar: pergunta
+    segmento: sst
+    formato: estatico
+    tema: ASO, PPP e LTCAT — qual é qual
+    titulo: "ASO, PPP e LTCAT:\nsão três documentos\ndiferentes e a\nempresa precisa\ndos três"
+    status: pendente
+    legenda: |
+      ASO, PPP e LTCAT: são três documentos diferentes, e confundi-los custa caro no futuro.
+
+      ASO é o atestado de saúde ocupacional. Diz se aquele trabalhador está apto para aquela função, naquele momento. Sai do PCMSO.
+
+      LTCAT é o laudo técnico das condições ambientais de trabalho. Descreve tecnicamente a que agentes o trabalhador está exposto no ambiente.
+
+      PPP é o perfil profissiográfico previdenciário. É o histórico da vida laboral do trabalhador na empresa, e é o que o INSS lê quando ele pede aposentadoria especial. O PPP se alimenta do LTCAT.
+
+      A conta chega assim: empresa sem LTCAT consistente entrega PPP frágil, e o trabalhador volta anos depois — com advogado — atrás do que o documento não provou.
+
+      Quer organizar isso antes de virar processo? WhatsApp (18) 99641-8959.
+
+  - data: 2026-10-30
+    pilar: servico
+    segmento: pericia
+    formato: carrossel
+    tema: O que o advogado ganha com um assistente técnico
+    titulo: "Perícia judicial não\nse contrata. Assistência\ntécnica, sim"
+    telas:
+      - "O perito é nomeado\npelo juízo e é auxiliar\ndele — não representa\nnenhuma das partes"
+      - "O assistente técnico é\ncontratado pela parte\ne acompanha a perícia\ntecnicamente"
+      - "Ele ajuda a formular\nquesitos que a prova\ntécnica consiga\nresponder"
+      - "Acompanha a diligência\ne registra o que foi\n(e o que não foi)\nverificado"
+      - "E analisa o laudo:\nmétodo, premissa,\nlastro de cada\nconclusão"
+      - "Advogado com apoio\ntécnico faz pergunta\nmelhor\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Uma distinção que muita gente mistura: perícia judicial não se contrata.
+
+      O perito é nomeado pelo juízo e atua como auxiliar dele. Não representa nenhuma das partes, e o compromisso é com a técnica.
+
+      Quem a parte contrata é o assistente técnico. E é aí que o advogado ganha.
+
+      O que um assistente técnico faz, na prática:
+
+      Ajuda a formular quesitos que a prova técnica consiga efetivamente responder — quesito mal construído não produz prova, produz "prejudicado".
+
+      Acompanha a diligência e registra o que foi verificado e o que não foi.
+
+      Analisa o laudo depois: método empregado, premissas adotadas, e se cada conclusão tem lastro no que foi examinado.
+
+      Nada disso é sobre inclinar resultado. É sobre a prova técnica ser completa — o que costuma ser o que faltava.
+
+      Advogado, quer conversar sobre um caso? WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-02
+    pilar: feriado
+    segmento: nenhum
+    formato: nenhum
+    tema: Finados — nada no feed
+    status: feriado
+    legenda: ""
+
+  - data: 2026-11-03
+    pilar: erro-caro
+    segmento: avaliacao
+    formato: carrossel
+    tema: Precificar pelo valor do vizinho
+    titulo: "\"O do lado vendeu\npor tanto\" não é\navaliação"
+    telas:
+      - "Dois imóveis na mesma\nrua podem ter padrão,\nidade e estado\ncompletamente diferentes"
+      - "E o que se ouve é\npreço pedido, não\nvalor de transação"
+      - "Avaliação compara\nelementos semelhantes\ne trata as diferenças,\ncom método"
+      - "Errar para cima:\no imóvel encalha.\nErrar para baixo:\nvocê doa a diferença"
+      - "Vai vender, partilhar\nou dar em garantia?\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      "O do lado vendeu por tanto." Essa frase já custou muito dinheiro a muita gente.
+
+      Dois imóveis na mesma rua podem ter padrão construtivo, idade, estado de conservação, área e situação documental completamente diferentes. E o que se ouve na vizinhança costuma ser preço pedido — não valor de transação.
+
+      Avaliação é outra coisa: é pesquisa de elementos semelhantes e tratamento das diferenças entre eles, por método previsto em norma, com a fundamentação registrada.
+
+      Errar para cima: o imóvel encalha meses e você acaba vendendo pior do que venderia.
+      Errar para baixo: você doou a diferença, e não tem volta.
+
+      E há os casos em que o laudo não é opção: inventário, partilha, garantia bancária, ação judicial.
+
+      Precisa saber o valor de verdade? WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-04
+    pilar: bastidor
+    segmento: civil
+    formato: reels
+    tema: "Infiltração: como eu descubro de onde vem a água"
+    titulo: "A mancha aparece\nnum lugar. A água\nentra em outro"
+    ativo: "⟨PENDENTE: vídeo seu investigando infiltração, em data/ativos/⟩"
+    status: pendente
+    legenda: |
+      A mancha aparece num lugar. A água entra em outro. É por isso que pintar por cima nunca resolve.
+
+      O que eu investigo, nessa ordem: de onde a água pode vir (chuva, laje, tubulação, solo), por onde ela caminha até aparecer, e o que mudou pouco antes de o problema começar.
+
+      Umidade ascendente, infiltração de laje e vazamento de instalação deixam assinaturas diferentes: altura da mancha, se piora com chuva, se piora com uso, se tem eflorescência.
+
+      Corrigir sem diagnosticar é repintar de tempos em tempos e ver a estrutura sendo comprometida embaixo do acabamento novo.
+
+      Tem mancha voltando sempre no mesmo lugar? WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-05
+    pilar: pergunta
+    segmento: pericia
+    formato: estatico
+    tema: Perito judicial e assistente técnico, qual é a diferença
+    titulo: "Perito é do juízo.\nAssistente técnico\né da parte"
+    status: pendente
+    legenda: |
+      Pergunta que aparece toda semana: perito e assistente técnico são a mesma coisa?
+
+      Não. E a diferença é estrutural.
+
+      O perito judicial é nomeado pelo juízo e atua como auxiliar dele (CPC, art. 148). Não é da parte autora nem da ré. O compromisso é com a técnica, e é isso que dá valor ao laudo.
+
+      O assistente técnico é indicado e contratado pela parte. Acompanha os trabalhos, pode apresentar parecer e manifestar-se sobre o laudo pericial.
+
+      O que os dois têm em comum: ambos respondem tecnicamente pelo que assinam, e nenhum dos dois decide o mérito. Quem decide é o juízo.
+
+      O engano que causa frustração: contratar assistente esperando que ele "conserte" um resultado. Ele não conserta — ele garante que a prova técnica seja completa e bem examinada, o que é diferente, e muitas vezes é o que faltava.
+
+      Advogado com dúvida técnica num caso: WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-06
+    pilar: servico
+    segmento: sst
+    formato: carrossel
+    tema: LTCAT e aposentadoria especial
+    titulo: "O documento que\no INSS vai pedir\ndo seu funcionário\n— daqui a 20 anos"
+    telas:
+      - "LTCAT descreve a que\nagentes o trabalhador\nestá exposto no\nambiente"
+      - "O PPP se alimenta dele\ne acompanha a vida\nlaboral do trabalhador"
+      - "Anos depois, é esse\nconjunto que o INSS lê\nna aposentadoria especial"
+      - "Empresa sem LTCAT\nconsistente entrega PPP\nfrágil — e responde\ndepois, na justiça"
+      - "Fazer agora custa\numa fração de\nreconstituir depois\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Tem um documento da sua empresa que só vai ser lido com atenção daqui a vinte anos — e por um terceiro.
+
+      O LTCAT descreve tecnicamente a que agentes o trabalhador está exposto no ambiente. O PPP acompanha a vida laboral dele e se alimenta desse laudo. Quando esse trabalhador pedir aposentadoria especial, é esse conjunto que o INSS vai analisar.
+
+      O problema aparece assim: empresa sem LTCAT consistente entrega PPP frágil. O benefício é negado, e o ex-funcionário volta — com advogado — atrás do que o documento deveria ter provado. Nessa hora a empresa precisa reconstituir condições de trabalho de anos atrás.
+
+      Fazer certo agora custa uma fração de reconstituir depois.
+
+      Quer avaliar como está a sua? WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-09
+    pilar: alerta-legal
+    segmento: sst
+    formato: carrossel
+    tema: Trabalho em altura sem treinamento
+    titulo: "Trabalho em altura é\na atividade que mais\nmata na construção"
+    telas:
+      - "Acima de dois metros\ncom risco de queda\njá é trabalho em altura"
+      - "Exige análise de risco,\npermissão de trabalho,\ne treinamento específico\n(NR-35)"
+      - "Treinamento tem\nvalidade — vencido,\né como não ter"
+      - "E o cinto: precisa de\nponto de ancoragem\nque aguente. Cinto\npreso em telha não é EPI"
+      - "Quer conferir sua\noperação em altura?\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Trabalho em altura é a atividade que mais mata na construção — e é a que mais se improvisa.
+
+      Acima de dois metros, com risco de queda, já é trabalho em altura. E isso exige análise de risco da atividade, autorização do trabalhador, e treinamento específico, conforme a NR-35.
+
+      Três coisas que eu encontro com frequência:
+
+      Treinamento vencido. Vencido é como não ter — na fiscalização e no acidente.
+
+      Cinto de segurança ancorado em qualquer coisa. Ponto de ancoragem precisa suportar a carga de uma queda; telha, tubulação e guarda-corpo improvisado não suportam.
+
+      Andaime montado por quem estava disponível, não por quem sabe.
+
+      Nenhuma dessas três aparece no orçamento da obra. Todas aparecem no acidente.
+
+      Quer conferir sua operação em altura? WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-10
+    pilar: erro-caro
+    segmento: pericia
+    formato: carrossel
+    tema: Quesito mal formulado derruba a prova técnica
+    titulo: "Quesito ruim não\nproduz prova.\nProduz \"prejudicado\""
+    telas:
+      - "Quesito que pergunta\ndireito, não técnica:\no perito não pode\nresponder"
+      - "Quesito genérico\n(\"há vícios?\") devolve\nresposta genérica"
+      - "Quesito que pressupõe\na resposta já nasce\nfrágil no contraditório"
+      - "Bom quesito: objetivo,\ntécnico, verificável\nem diligência"
+      - "É aqui que o assistente\ntécnico paga o próprio\ncusto\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      A prova pericial costuma se perder antes da diligência: na formulação dos quesitos.
+
+      O que eu vejo com frequência:
+
+      Quesito que pergunta direito, e não técnica. "O réu agiu com negligência?" — o perito não pode responder. Isso é mérito, e mérito é do juízo.
+
+      Quesito genérico. "Existem vícios construtivos no imóvel?" devolve resposta genérica, e resposta genérica não decide nada.
+
+      Quesito que já embute a resposta desejada. Ele se desmonta no primeiro contraditório.
+
+      Quesito sobre o que não dá para verificar. Se ninguém pode examinar, a resposta vai ser "prejudicado".
+
+      Bom quesito é objetivo, técnico e verificável em diligência: o que existe, em que estado, qual a causa técnica provável, qual o custo de reparação.
+
+      A diferença entre os dois conjuntos costuma ser a diferença entre ter e não ter prova.
+
+      Advogado, quer revisar os quesitos antes de protocolar? WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-11
+    pilar: bastidor
+    segmento: ambiental
+    formato: reels
+    tema: Armazenamento de produto químico numa empresa
+    titulo: "O que eu olho num\ndepósito de produto\nquímico"
+    ativo: "⟨PENDENTE: vídeo seu em visita técnica, em data/ativos/⟩"
+    status: pendente
+    legenda: |
+      O que eu olho quando avalio o armazenamento de produto químico numa empresa:
+
+      Se existe contenção embaixo do que pode vazar — e se ela comporta o volume do maior recipiente ali.
+
+      Se produtos incompatíveis estão separados. Muita coisa só vira acidente quando encosta no vizinho de prateleira.
+
+      Se a FISPQ de cada produto está acessível a quem manuseia, e não arquivada numa gaveta da administração.
+
+      Se a rotulagem sobreviveu ao uso. Produto transferido para outro recipiente sem rótulo é risco sem aviso.
+
+      E o que conecta tudo: se esses produtos aparecem no inventário de riscos e no PCMSO com os exames correspondentes.
+
+      Isso é meio ambiente e segurança do trabalho ao mesmo tempo — e a fiscalização costuma chegar pelos dois lados.
+
+      Quer uma visita técnica na sua? WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-12
+    pilar: pergunta
+    segmento: avaliacao
+    formato: estatico
+    tema: Quanto vale meu imóvel, e por que não se responde por mensagem
+    titulo: "\"Quanto vale meu\nimóvel?\" Eu não\nrespondo isso\npor mensagem"
+    status: pendente
+    legenda: |
+      "Quanto vale meu imóvel?" Eu não respondo isso por mensagem — e vou te explicar por quê, porque a explicação é a resposta.
+
+      Valor de mercado não é opinião de quem entende do assunto. É conclusão de um trabalho: pesquisa de imóveis semelhantes efetivamente ofertados ou transacionados, tratamento das diferenças entre eles e o seu, e a fundamentação registrada conforme a NBR 14653.
+
+      Quem chuta um número por WhatsApp está fazendo o contrário: partindo da impressão e procurando justificativa depois.
+
+      E o número importa de verdade em situações que não perdoam erro: inventário e partilha, garantia bancária, ação judicial, venda de um patrimônio que levou a vida para construir.
+
+      O que eu consigo te dizer rápido, e de graça, é qual tipo de laudo o seu caso exige — porque muita gente pede um e precisa de outro.
+
+      Me manda o caso no WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-13
+    pilar: servico
+    segmento: civil
+    formato: carrossel
+    tema: Quando a obra precisa de cálculo estrutural
+    titulo: "Quando a sua obra\nprecisa de memória\nde cálculo"
+    telas:
+      - "Sempre que houver\nelemento estrutural\nnovo: laje, viga,\npilar, escada"
+      - "Sempre que a estrutura\nexistente for receber\ncarga nova — pavimento,\npiscina, caixa d'água"
+      - "Sempre que uma peça\nestrutural for removida\nou furada"
+      - "E em toda reforma de\nestrutura antiga: o que\nexiste não se presume,\nse investiga"
+      - "Projeto, memória e ART\n— o conjunto que\nresponde depois\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      Quando a sua obra precisa de cálculo estrutural e memória de cálculo:
+
+      Sempre que houver elemento estrutural novo — laje, viga, pilar, escada, reservatório.
+
+      Sempre que a estrutura existente for receber carga nova: mais um pavimento, piscina, caixa d'água, equipamento pesado, telhado diferente do original.
+
+      Sempre que uma peça estrutural for removida, furada ou enfraquecida.
+
+      E em toda intervenção em estrutura antiga. Aqui está o ponto que mais me preocupa: a capacidade do que já está construído não se presume pelo projeto original nem pela idade. Ou se investiga, ou se está apostando.
+
+      O que fica com você no fim: projeto, memória de cálculo e ART. É esse conjunto que responde tecnicamente se alguém questionar — inclusive daqui a dez anos.
+
+      Vai construir ou ampliar? WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-16
+    pilar: alerta-legal
+    segmento: ambiental
+    formato: carrossel
+    tema: Renovação de licença ambiental tem prazo que começa antes do vencimento
+    titulo: "Licença ambiental:\na renovação começa\nantes do vencimento"
+    telas:
+      - "Pedido de renovação\ntem prazo próprio,\nanterior ao fim da\nvalidade"
+      - "Pedido no prazo costuma\nprorrogar a validade\naté a decisão do órgão"
+      - "Fora do prazo, a\nempresa pode operar\nsem licença válida\nsem perceber"
+      - "E operar sem licença\né infração ambiental,\nnão pendência\nadministrativa"
+      - "Sabe quando a sua\nvence? (18) 99641-8959"
+    status: pendente
+    legenda: |
+      Licença ambiental vencida quase nunca é descuido: é agenda.
+
+      O pedido de renovação tem prazo próprio, que começa antes do fim da validade. Requerido dentro dele, a validade costuma ficar prorrogada até o órgão decidir — e a empresa segue operando regularmente.
+
+      Perdido o prazo, a situação muda de natureza: a empresa passa a operar sem licença válida, muitas vezes sem perceber, porque nada acontece no dia seguinte. O que acontece é depois, e é infração ambiental — não pendência administrativa.
+
+      Os prazos exatos variam conforme o órgão competente e o tipo de licença.
+
+      Duas perguntas que valem a pena responder hoje: você sabe a data de vencimento da sua licença? E sabe quantos dias antes o pedido de renovação precisa entrar?
+
+      Se a resposta a qualquer uma for "não", me chama: WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-17
+    pilar: erro-caro
+    segmento: sst
+    formato: carrossel
+    tema: EPI entregue sem ficha assinada
+    titulo: "EPI entregue sem\nficha assinada é\nEPI não entregue"
+    telas:
+      - "Na fiscalização e na\njustiça, o que não está\nregistrado não\naconteceu"
+      - "A ficha registra: qual\nEPI, qual CA, quando,\ne a assinatura de\nquem recebeu"
+      - "Entregar não basta:\na empresa tem que\nfiscalizar o uso"
+      - "E o EPI tem que ser\no adequado ao risco —\no que exige conhecer\no risco antes"
+      - "Quer organizar isso\nde uma vez?\n(18) 99641-8959"
+    status: pendente
+    legenda: |
+      EPI entregue sem ficha assinada é, para todos os efeitos, EPI não entregue.
+
+      Parece burocracia até o dia em que a empresa precisa provar que entregou. Na fiscalização e na reclamação trabalhista, o que não está registrado não aconteceu.
+
+      A ficha registra qual EPI, qual CA, em que data, e a assinatura de quem recebeu. Sem isso, a defesa da empresa é a palavra dela contra a do trabalhador.
+
+      Mas tem uma parte que pega mesmo quem tem as fichas em ordem: entregar não encerra a obrigação. A empresa também tem que exigir e fiscalizar o uso. EPI pendurado no prego não protege ninguém e não protege a empresa.
+
+      E antes de tudo isso: o EPI tem que ser o adequado ao risco — o que exige saber qual é o risco, medido, e não escolhido por catálogo.
+
+      Quer organizar isso de uma vez? WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-18
+    pilar: bastidor
+    segmento: civil
+    formato: reels
+    tema: O que eu investigo antes de liberar reforma em estrutura antiga
+    titulo: "Em estrutura antiga,\no que existe não se\npresume. Se investiga"
+    ativo: "⟨PENDENTE: vídeo seu em estrutura existente, em data/ativos/⟩"
+    status: pendente
+    legenda: |
+      Em estrutura antiga, o que existe não se presume — se investiga.
+
+      Projeto antigo é indício, não é dado. Entre o que foi desenhado nos anos 70 e o que foi realmente executado costuma haver diferença, e é justamente nessa diferença que a reforma dá errado.
+
+      O que eu levanto antes de liberar qualquer intervenção: geometria real dos elementos, medida no local; indícios de armadura e cobrimento; estado do concreto; fissuras e o que elas contam; e o histórico — o que já foi alterado ali antes.
+
+      Só depois disso dá para dizer o que a estrutura aguenta receber.
+
+      Vai reformar numa construção antiga? Me chama antes de comprar material: WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-19
+    pilar: pergunta
+    segmento: civil
+    formato: estatico
+    tema: Posso levantar mais um pavimento na minha casa?
+    titulo: "\"Posso levantar mais\num andar na minha\ncasa?\" Depende de\nduas coisas"
+    status: pendente
+    legenda: |
+      "Posso levantar mais um andar na minha casa?" A resposta depende de duas coisas diferentes, e as pessoas só costumam pensar na primeira.
+
+      A primeira é se a lei permite: o que a legislação de uso e ocupação do solo e o código de obras do município autorizam naquele terreno — recuos, taxa de ocupação, coeficiente de aproveitamento, gabarito.
+
+      A segunda é se a estrutura aguenta. E essa ninguém responde olhando a casa de fora. Fundação e pilares foram dimensionados para a carga que existe hoje; um pavimento novo é carga nova em tudo que está embaixo.
+
+      O caminho é sempre o mesmo: investigar o que existe, verificar a capacidade, e só então projetar o que vai subir — com memória de cálculo e ART.
+
+      Está pensando em ampliar? WhatsApp (18) 99641-8959.
+
+  - data: 2026-11-20
+    pilar: feriado
+    segmento: nenhum
+    formato: nenhum
+    tema: Consciência Negra — nada no feed
+    status: feriado
+    legenda: ""

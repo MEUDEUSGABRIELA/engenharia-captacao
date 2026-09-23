@@ -26,8 +26,18 @@ mais custam alcance.
 
 ## Proporção por segmento
 
-40% segurança do trabalho · 40% engenharia civil · 20% ambiental. O ambiental entra quando houver
-gancho (licenciamento, outorga, estiagem, exigência de órgão), não por rodízio automático.
+Os pesos vivem em `kb/segmentos.yaml`: SST 30% · civil 30% · perícia 15% · avaliação 15% ·
+ambiental 10%. O ambiental entra quando houver gancho (licenciamento, outorga, estiagem, exigência
+de órgão), não por rodízio automático.
+
+**Perícia e avaliação falam com outro público** — advogado, banco, corretor, inventariante — dentro
+do mesmo feed. Isso é de propósito: quem contrata laudo de avaliação muitas vezes é o mesmo
+escritório que precisa de assistente técnico, e quem vê um post de vistoria entende que a mesma
+engenheira faz as duas coisas. O que muda é o vocabulário, não a identidade.
+
+Duas travas para esses segmentos, detalhadas em `kb/regras-publicidade.md`: perícia judicial vem por
+nomeação do juízo e **não se oferece** (o que se oferece é assistência técnica), e nenhuma legenda
+estima valor de imóvel.
 
 ## CTA
 

@@ -10,12 +10,6 @@ import random
 
 from .. import config
 
-BLOCO_POR_SEGMENTO = {
-    "sst": "segurancadotrabalho",
-    "civil": "civil",
-    "ambiental": "ambiental",
-}
-
 
 def sortear_hashtags(segmento: str, semente: str) -> list[str]:
     """12 a 18 hashtags: as fixas do bloco local e do segmento, mais rotativas sorteadas.
@@ -25,10 +19,10 @@ def sortear_hashtags(segmento: str, semente: str) -> list[str]:
     """
     blocos = config.hashtags()
     local = blocos["local"]
-    nome_bloco = BLOCO_POR_SEGMENTO.get(segmento)
-    if nome_bloco is None:
+    ficha = config.segmentos().get(segmento)
+    if ficha is None:
         return []
-    tema = blocos[nome_bloco]
+    tema = blocos[ficha["bloco_hashtag"]]
 
     sorteio = random.Random(semente)
     escolhidas = list(local["fixas"]) + list(tema["fixas"])

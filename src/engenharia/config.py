@@ -37,6 +37,11 @@ def identidade() -> dict:
     return carregar_yaml(KB / "identidade.yaml")
 
 
+def segmentos() -> dict:
+    """Público, etiqueta da arte, bloco de hashtag e peso na pauta, por segmento."""
+    return carregar_yaml(KB / "segmentos.yaml")
+
+
 def termos_proibidos() -> list[str]:
     """Lê a lista do bloco YAML de `kb/regras-publicidade.md`.
 

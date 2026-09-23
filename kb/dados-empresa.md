@@ -14,18 +14,24 @@ locais e se cabe anunciar atendimento presencial na região⟩
 
 ## Segmentos e prioridade
 
-| Segmento | Peso na pauta | Público principal |
-| --- | --- | --- |
-| Segurança do trabalho | 40% | Empresa (indústria, comércio, construtora, condomínio) |
-| Engenharia civil | 40% | Pessoa física (obra, reforma, imóvel) e construtoras |
-| Engenharia ambiental | 20% | Empresa e produtor rural, quando houver gancho de calendário |
+Os pesos e o público de cada segmento estão em `kb/segmentos.yaml` — é de lá que o motor lê, e é
+lá que se muda a prioridade. Hoje: **SST 30% · civil 30% · perícia 15% · avaliação 15% ·
+ambiental 10%**.
 
-## Os dois públicos
+`python -m engenharia.publicar --conferir` mostra o mix real do que ainda vai ao ar contra esses
+pesos.
+
+## Os quatro públicos
 
 | Público | O que tira o sono | Post que converte |
 | --- | --- | --- |
-| Empresa | Fiscalização do trabalho, multa de NR, exigência de cliente ou seguradora | PGR/PCMSO, insalubridade, prazos legais |
+| Empresa com empregado | Fiscalização do trabalho, multa de NR, exigência de cliente ou seguradora | PGR/PCMSO, insalubridade, LTCAT, prazos legais |
 | Pessoa física | Obra embargada, habite-se, financiamento, prefeitura | Regularização, laudo estrutural, ART, projeto |
+| Advogado e escritório | Prova técnica fraca, quesito que volta "prejudicado", laudo que não se sustenta | Assistência técnica, como se formula quesito, como se lê um laudo |
+| Banco, corretor, inventariante | Valor errado: imóvel que encalha, partilha injusta, garantia recusada | Avaliação NBR 14653, método, quando o laudo é exigido |
+
+Os dois públicos novos são **menores e valem mais**: um advogado satisfeito indica outros casos, e
+banco e imobiliária viram recorrência. Não se mede esse segmento por curtida.
 
 ## Serviços que a copy pode oferecer
 
@@ -37,10 +43,9 @@ Lista fechada. Serviço que não está aqui não é anunciado até ser acrescent
 - **Civil:** laudo técnico de edificação, vistoria de patologia (fissura, infiltração, recalque),
   vistoria pré-compra, projeto e regularização de imóvel, acompanhamento de obra, ART.
 - **Ambiental:** licenciamento ambiental, outorga, gestão de resíduos, estudos e laudos ambientais.
+- **Perícia:** assistência técnica contratada pela parte; perícia judicial por nomeação do juízo.
+  A distinção entre as duas é regra de copy — ver `kb/regras-publicidade.md`.
+- **Avaliação de imóveis:** laudo conforme NBR 14653 — urbano, rural, involutivo, evolutivo.
 
-Os outros projetos do workspace mostram que há capacidade instalada também em **avaliação de imóveis
-(NBR 14653)**, **perícia judicial**, **cálculo estrutural** e **desenho técnico/projeto em DXF**.
-
-⟨PENDENTE: quer captar esses quatro por aqui também? Perícia judicial e avaliação de imóveis têm
-público próprio (advogados, bancos, corretores) e renderiam um pilar dedicado — mas só entram na
-pauta se você quiser esse tipo de cliente vindo do Instagram⟩
+Cálculo estrutural e desenho técnico entram como serviços do segmento `civil`, não como segmento
+próprio: quem contrata é o mesmo público de obra e reforma.

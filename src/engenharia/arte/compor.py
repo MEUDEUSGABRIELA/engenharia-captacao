@@ -129,9 +129,8 @@ def compor(post: dict, destino: Path) -> tuple[list[Path], list[str]]:
     elif ativo:
         avisos.append("ativo pendente — a arte saiu de template, sem foto real")
 
-    etiqueta = {"sst": "segurança do trabalho", "civil": "engenharia civil", "ambiental": "ambiental"}.get(
-        post.get("segmento", ""), None
-    )
+    ficha = config.segmentos().get(post.get("segmento", ""))
+    etiqueta = ficha["etiqueta"] if ficha else None
 
     arquivos = [destino / "01-capa.jpg"]
     _tela(post.get("titulo") or post.get("tema", ""), rodape, foto, etiqueta).save(
