@@ -5,11 +5,7 @@
   "formato": "carrossel",
   "tema": "A parede que você não podia derrubar",
   "arquivos": [
-    "01-capa.jpg",
-    "02-tela.jpg",
-    "03-tela.jpg",
-    "04-tela.jpg",
-    "05-tela.jpg"
+    "01-capa.jpg"
   ],
   "caracteres_legenda": 843,
   "avisos": [],
