@@ -70,7 +70,12 @@ def _fundo_de_foto(caminho: Path) -> Image.Image:
     return Image.alpha_composite(foto.convert("RGBA"), veu).convert("RGB")
 
 
-def _tela(titulo: str, rodape: str, foto: Path | None = None, etiqueta: str | None = None) -> Image.Image:
+def _tela(
+    titulo: str,
+    rodape: tuple[str, str],
+    foto: Path | None = None,
+    etiqueta: str | None = None,
+) -> Image.Image:
     imagem = _fundo_de_foto(foto) if foto else Image.new("RGB", (LARGURA, ALTURA), FUNDO)
     desenho = ImageDraw.Draw(imagem)
 
@@ -94,21 +99,23 @@ def _tela(titulo: str, rodape: str, foto: Path | None = None, etiqueta: str | No
         if altura_total <= ALTURA - 2 * MARGEM - 300:
             break
 
-    y = ALTURA - MARGEM - 170 - altura_total
+    y = ALTURA - MARGEM - 190 - altura_total
     desenho.rectangle([MARGEM, y - 46, MARGEM + 130, y - 36], fill=DESTAQUE)
     for linha in linhas:
         desenho.text((MARGEM, y), linha, font=fonte, fill=TEXTO)
         y += altura_linha
 
-    fonte_rodape = _fonte(30, negrito=False)
-    desenho.text((MARGEM, ALTURA - MARGEM - 40), rodape, font=fonte_rodape, fill=APOIO)
+    # Duas linhas: a primeira capta (handle e WhatsApp), a segunda credencia (empresa e CREA).
+    desenho.text((MARGEM, ALTURA - MARGEM - 74), rodape[0], font=_fonte(30, negrito=True), fill=APOIO)
+    desenho.text((MARGEM, ALTURA - MARGEM - 34), rodape[1], font=_fonte(26, negrito=False), fill=APOIO)
     return imagem
 
 
 def compor(post: dict, destino: Path) -> tuple[list[Path], list[str]]:
     """Gera as imagens do post. Devolve os arquivos e os avisos do que não deu para usar."""
     avisos: list[str] = []
-    rodape = "@meudeusgabrielaengenharia  ·  (18) 99641-8959"
+    identidade = config.identidade()["rodape"]
+    rodape = (identidade["linha_1"], identidade["linha_2"])
     destino.mkdir(parents=True, exist_ok=True)
 
     foto = None

@@ -1,0 +1,48 @@
+---
+# Identidade profissional — fonte única do que a arte e a copy podem afirmar sobre quem assina.
+# Cópia (não referência) de projects/laudos/kb/responsavel-tecnica.yaml, mesma convenção dos demais
+# projetos do workspace: os arquivos de identidade são copiados, para que um projeto nunca dependa
+# de outro. Dados informados pela própria responsável técnica em 2026-09-18.
+#
+# Mudou lá? Mude aqui também — e vice-versa.
+
+responsavel_tecnica:
+  nome: "Gabriela Alves de Lima Cardoso"
+  titulo: "Engenheira Civil, Ambiental e de Segurança do Trabalho"
+  crea:
+    numero: "5063463261"
+    uf: "SP"
+    formatado: "CREA-SP 5063463261"
+    rnp: "2609378327"
+
+empresa:
+  nome: "MEUDEUS Engenharia"
+  razao_social: "MEUDEUS ENGENHARIA LTDA"
+  cnpj: "65.267.561/0001-05"
+  registro_crea: "2893082-SP"
+
+contato:
+  telefone: "(18) 99641-8959"
+  telefone_digitos: "5518996418959"
+  email: "meudeusengenharia@gmail.com"
+
+perfil:
+  handle: "@meudeusgabrielaengenharia"
+  # Campo pesquisável do Instagram, diferente do @: carrega a marca e as palavras que o cliente digita.
+  nome_exibicao: "MEUDEUS Engenharia | Laudos e Projetos"
+  link_bio: "https://wa.me/5518996418959?text=Ol%C3%A1%2C+vim+pelo+Instagram"
+
+# Rodapé composto em toda arte. Duas linhas: a primeira capta, a segunda credencia.
+rodape:
+  linha_1: "@meudeusgabrielaengenharia  ·  (18) 99641-8959"
+  linha_2: "MEUDEUS Engenharia  ·  CREA-SP 5063463261"
+
+praca:
+  # Onde os clientes estão e para onde a copy e as hashtags apontam.
+  atuacao: "Presidente Prudente/SP e região"
+  # ⟨PENDENTE: o endereço profissional registrado é em São Paulo capital (Rua Paes Leme, 215,
+  # Pinheiros), e os laudos são elaborados lá — enquanto a captação deste perfil é no oeste paulista.
+  # Não é contradição necessariamente, mas muda o que a copy pode prometer: dá para dizer
+  # "atendimento em Presidente Prudente e região"? Com que frequência você está na região para
+  # vistoria? A resposta define se as hashtags locais seguem como estão e se cabe falar em visita.⟩
+  endereco_registrado: "Rua Paes Leme, 215, conj. 1713 — Pinheiros — São Paulo/SP"

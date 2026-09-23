@@ -1,31 +1,16 @@
-# Dados da operação — fonte única
+# A operação: segmentos, público e serviços
 
-Qualquer legenda, arte, bio ou resposta de DM que cite contato, nome ou registro usa **estes**
-valores. Divergência entre o que está aqui e o que foi publicado é erro de publicação, não de
-cadastro.
+Quem assina, registro, contato e handle estão em `kb/identidade.yaml` — é lá que a arte e a copy vão
+buscar. Este arquivo trata do resto: para quem o perfil fala e o que ele pode oferecer.
 
-## Perfil
+## Praça
 
-| Campo | Valor |
-| --- | --- |
-| Instagram | `@meudeusgabrielaengenharia` |
-| Nome do perfil (campo pesquisável) | `Gabriela \| Engenharia e Laudos` |
-| WhatsApp / telefone | (18) 99641-8959 |
-| Link da bio | `https://wa.me/5518996418959?text=Ol%C3%A1%2C+vim+pelo+Instagram` |
-| Cidade-base | Presidente Prudente/SP |
-| Raio de atendimento | ⟨PENDENTE: até quantos km você se desloca para vistoria? Define quais cidades entram nas hashtags locais e nos anúncios⟩ |
+Atuação: **Presidente Prudente/SP e região**. O endereço profissional registrado é em São Paulo
+capital — ver a pendência anotada em `kb/identidade.yaml`, que precisa de resposta antes de a copy
+prometer visita ou atendimento presencial com frequência.
 
-## Responsável técnica
-
-| Campo | Valor |
-| --- | --- |
-| Nome completo (como no registro) | ⟨PENDENTE: o workspace usa "Gabriela Calabreta" em `laudos/` e `semijoias-captacao/` e "Gabriela Alves de Lima Cardoso" em `pericias-judiciais/`, `calculos-estruturais/` e `desenhos-tecnicos/` — qual vale no perfil?⟩ |
-| Registro CREA | ⟨PENDENTE: número e UF⟩ |
-| Formações | Engenharia civil, engenharia ambiental, engenharia de segurança do trabalho |
-| CNPJ (se a atuação for PJ) | ⟨PENDENTE⟩ |
-
-O registro CREA precisa aparecer no perfil e em qualquer peça que cite responsabilidade técnica.
-Enquanto estiver `⟨PENDENTE⟩`, nenhuma arte deve exibir número de registro.
+⟨PENDENTE: até quantos km você se desloca para vistoria? Define quais cidades entram nas hashtags
+locais e se cabe anunciar atendimento presencial na região⟩
 
 ## Segmentos e prioridade
 
@@ -35,16 +20,27 @@ Enquanto estiver `⟨PENDENTE⟩`, nenhuma arte deve exibir número de registro.
 | Engenharia civil | 40% | Pessoa física (obra, reforma, imóvel) e construtoras |
 | Engenharia ambiental | 20% | Empresa e produtor rural, quando houver gancho de calendário |
 
+## Os dois públicos
+
+| Público | O que tira o sono | Post que converte |
+| --- | --- | --- |
+| Empresa | Fiscalização do trabalho, multa de NR, exigência de cliente ou seguradora | PGR/PCMSO, insalubridade, prazos legais |
+| Pessoa física | Obra embargada, habite-se, financiamento, prefeitura | Regularização, laudo estrutural, ART, projeto |
+
 ## Serviços que a copy pode oferecer
 
-Lista fechada. Serviço que não está aqui não é anunciado até ser adicionado aqui.
+Lista fechada. Serviço que não está aqui não é anunciado até ser acrescentado aqui.
 
-- Segurança do trabalho: PGR, PCMSO (em conjunto com médico do trabalho), laudo de insalubridade,
+- **Segurança do trabalho:** PGR, PCMSO (em conjunto com médico do trabalho), laudo de insalubridade,
   laudo de periculosidade, LTCAT, avaliação de agentes (ruído, calor, químicos), ordens de serviço,
   apoio em fiscalização.
-- Civil: laudo técnico de edificação, vistoria de patologia (fissura, infiltração, recalque),
+- **Civil:** laudo técnico de edificação, vistoria de patologia (fissura, infiltração, recalque),
   vistoria pré-compra, projeto e regularização de imóvel, acompanhamento de obra, ART.
-- Ambiental: licenciamento ambiental, outorga, gestão de resíduos, estudos e laudos ambientais.
+- **Ambiental:** licenciamento ambiental, outorga, gestão de resíduos, estudos e laudos ambientais.
 
-⟨PENDENTE: confirmar esta lista — retirar o que você não quer atender agora e acrescentar o que
-faltou. É a lista que o motor usa para montar os posts do pilar "serviço e prova"⟩
+Os outros projetos do workspace mostram que há capacidade instalada também em **avaliação de imóveis
+(NBR 14653)**, **perícia judicial**, **cálculo estrutural** e **desenho técnico/projeto em DXF**.
+
+⟨PENDENTE: quer captar esses quatro por aqui também? Perícia judicial e avaliação de imóveis têm
+público próprio (advogados, bancos, corretores) e renderiam um pilar dedicado — mas só entram na
+pauta se você quiser esse tipo de cliente vindo do Instagram⟩

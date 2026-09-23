@@ -32,6 +32,11 @@ def hashtags() -> dict:
     return carregar_yaml(KB / "hashtags.yaml")
 
 
+def identidade() -> dict:
+    """Quem assina: nome, CREA, empresa, contato e handle. Nada disso mora em código."""
+    return carregar_yaml(KB / "identidade.yaml")
+
+
 def termos_proibidos() -> list[str]:
     """Lê a lista do bloco YAML de `kb/regras-publicidade.md`.
 
