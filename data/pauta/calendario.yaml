@@ -100,7 +100,7 @@ posts:
   - data: 2026-09-29
     pilar: erro-caro
     segmento: civil
-    formato: carrossel
+    formato: estatico  # a arte da responsável técnica é uma peça só
     tema: A parede que você não podia derrubar
     titulo: "O erro mais caro de reforma:\nderrubaram a parede errada"
     visual:
@@ -113,11 +113,6 @@ posts:
         rotulo: ESTRUTURAL
         destaque: "Não pode sair"
         texto: "Sustenta laje, viga ou o pavimento de cima — e quase nunca se anuncia. Em construção antiga, menos ainda."
-    telas:
-      - "Parede de vedação\npode sair.\nParede que sustenta\nlaje ou viga, não."
-      - "E ela quase nunca\nse anuncia — em\nconstrução antiga,\nmenos ainda."
-      - "O que aparece depois:\nfissura em diagonal,\nporta que raspa,\npiso de cima cedendo"
-      - "A verificação acontece\nantes da marreta\n(18) 99641-8959"
     status: pendente
     legenda: |
       O erro mais caro de reforma cabe numa frase: derrubaram a parede errada.
