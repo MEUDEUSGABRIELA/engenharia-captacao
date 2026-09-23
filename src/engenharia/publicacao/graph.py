@@ -1,10 +1,14 @@
-"""Publicação pela Instagram Graph API (Meta).
+"""Publicação pela API do Instagram, no fluxo de **login do Instagram**.
 
 Duas etapas, sempre: cria-se um *container* de mídia e depois publica-se o container. Carrossel tem
 uma etapa a mais — cada imagem vira um container filho antes de o carrossel ser montado.
 
-A versão da API é configurável (`GRAPH_VERSION`) porque a Meta descontinua versão antiga com
-regularidade — ver `kb/setup-meta.md`.
+**Por que `graph.instagram.com` e não `graph.facebook.com`:** existem dois caminhos para publicar
+numa conta profissional. O de *login do Facebook* exige que a conta esteja vinculada a uma Página
+que o app enxergue — e, na configuração desta conta, `/me/accounts` devolvia zero Páginas mesmo com
+todas as permissões concedidas. O de *login do Instagram* não depende de Página: o token é emitido
+para a conta do Instagram direto. É o que está em uso aqui desde 23.09.2026, e o token dele começa
+com `IGAA`. Ver `kb/setup-meta.md`.
 """
 
 from __future__ import annotations
@@ -24,7 +28,7 @@ class ErroDaMeta(RuntimeError):
 
 def _base() -> str:
     versao = config.env("GRAPH_VERSION", "v21.0")
-    return f"https://graph.facebook.com/{versao}"
+    return f"https://graph.instagram.com/{versao}"
 
 
 def _credenciais() -> tuple[str, str]:
@@ -68,7 +72,7 @@ def _esperar_container(container_id: str, token: str, tentativas: int = 12) -> N
 
 
 def publicar(urls: list[str], legenda: str) -> str:
-    """Publica uma imagem ou um carrossel. Devolve o id do post na Meta."""
+    """Publica uma imagem ou um carrossel. Devolve o id do post."""
     token, usuario = _credenciais()
     if not urls:
         raise ErroDaMeta("nenhuma imagem para publicar")
@@ -104,20 +108,36 @@ def publicar(urls: list[str], legenda: str) -> str:
     )["id"]
 
 
-def dias_ate_expirar() -> int | None:
-    """Quantos dias faltam para o token vencer, ou None se a Meta não informar.
+def conta() -> dict:
+    """Ficha da conta conectada. Serve de teste rápido de que o token ainda vale."""
+    token, usuario = _credenciais()
+    resposta = requests.get(
+        f"{_base()}/{usuario}",
+        params={
+            "fields": "id,username,account_type,media_count,followers_count",
+            "access_token": token,
+        },
+        timeout=TEMPO_LIMITE,
+    )
+    corpo = resposta.json()
+    if "error" in corpo:
+        raise ErroDaMeta(corpo["error"].get("message", str(corpo)))
+    return corpo
 
-    O token de longa duração dura cerca de 60 dias. O pipeline avisa quando está perto do fim —
-    a renovação é manual, de propósito: guardar uma credencial com poder de rotacionar segredos
-    seria uma credencial a mais para vazar.
+
+def renovar_token() -> tuple[str, int]:
+    """Estende o token por mais 60 dias. Devolve (token novo, segundos até expirar).
+
+    No fluxo de login do Instagram a renovação não precisa da chave secreta: basta o próprio token,
+    desde que tenha mais de 24 horas de vida e menos de 60 dias.
     """
     token, _ = _credenciais()
     resposta = requests.get(
-        f"{_base()}/debug_token",
-        params={"input_token": token, "access_token": token},
+        "https://graph.instagram.com/refresh_access_token",
+        params={"grant_type": "ig_refresh_token", "access_token": token},
         timeout=TEMPO_LIMITE,
-    ).json()
-    expira = resposta.get("data", {}).get("expires_at")
-    if not expira:
-        return None
-    return max(0, int((expira - time.time()) // 86400))
+    )
+    corpo = resposta.json()
+    if "error" in corpo:
+        raise ErroDaMeta(corpo["error"].get("message", str(corpo)))
+    return corpo["access_token"], int(corpo.get("expires_in", 0))

@@ -10,6 +10,30 @@ frequência.
 
 ---
 
+## O caminho que funcionou, e o que não funcionou
+
+Registrado em 23.09.2026, depois de tentar os dois.
+
+**Não funcionou: login do Facebook.** É o caminho que a documentação da Meta sugere primeiro e o que
+estava escrito aqui antes. Ele exige que a conta do Instagram esteja vinculada a uma Página que o
+app enxergue. Nesta conta, o token era gerado com as quatro permissões concedidas
+(`instagram_basic`, `instagram_content_publish`, `pages_show_list`, `pages_read_engagement`) e mesmo
+assim `/me/accounts` devolvia **zero Páginas** — inclusive depois de regerar o token. A Página
+"Gabriela Engenharia" existe e está ativa, mas não aparecia para a conta que autorizou o app.
+
+**Funcionou: login do Instagram.** O token é emitido para a conta do Instagram direto, sem depender
+de Página. Começa com `IGAA` e fala com `graph.instagram.com`. Dois detalhes que travaram no meio do
+caminho:
+
+1. A conta precisa ter a função de **Testador do Instagram** no app — e o convite tem que ser
+   **aceito** dentro do Instagram, em `instagram.com/accounts/manage_access/`. Sem isso a
+   autorização falha com *"Função de desenvolvedor é insuficiente"*.
+2. As duas entradas truncadas do menu lateral (`Configuração da API com login d...`) levam **ambas**
+   à variante do Facebook. A do Instagram se alcança pelo link azul dentro de "Auxiliar de
+   integração de API".
+
+Se um dia for preciso refazer isto, comece pelo login do Instagram e ignore o resto.
+
 ## Bloco 1 — Meta
 
 ### 🔑 1. Instagram em conta Comercial
