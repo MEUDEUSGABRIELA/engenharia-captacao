@@ -104,12 +104,14 @@ gh secret set IG_USER_ID --body "<id>"
 gh secret set HOSPEDAGEM_BASE --body "https://raw.githubusercontent.com/<usuário>/engenharia-captacao/main"
 ```
 
-**Por que público:** a Meta busca a imagem por URL, sem token, e `raw.githubusercontent.com` não
-serve arquivo de repositório privado. O que fica visível é a arte, as legendas e o código — tudo que
-vai ao ar de qualquer forma. Suas fotos de vistoria **não** vão: `data/ativos/` está no `.gitignore`.
+**Repositório público — decidido em 23.09.2026.** A Meta busca a imagem por URL, sem token, e
+`raw.githubusercontent.com` não serve arquivo de repositório privado. O que fica visível é a arte,
+as legendas e o código: conteúdo que vai ao ar de qualquer forma. As fotos de vistoria **não** vão —
+`data/ativos/` está no `.gitignore`.
 
-Se preferir repositório privado, a hospedagem da imagem tem que ser outra e a gente resolve junto —
-mas aí não é mais um clique.
+O que isso obriga a lembrar, para sempre: **nada de dado de cliente neste repositório.** Foto,
+planta, nome, endereço, número de processo. Se um dia entrar por engano, não basta apagar no commit
+seguinte — o histórico guarda.
 
 ---
 

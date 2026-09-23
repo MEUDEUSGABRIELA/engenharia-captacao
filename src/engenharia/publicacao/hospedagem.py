@@ -7,10 +7,10 @@ Como isso é resolvido a custo zero: o workflow do GitHub Actions faz commit de
 `data/saida/<data>/` antes de publicar, e a imagem passa a existir em `raw.githubusercontent.com`.
 Este módulo só monta a URL correspondente.
 
-⟨PENDENTE: essa rota exige repositório **público** — `raw.githubusercontent.com` não serve arquivo
-de repositório privado sem token, e a Meta acessa sem token. Decidir entre repositório público
-(mais simples, e o conteúdo ali já é conteúdo que vai ao ar de qualquer forma) ou hospedagem
-alternativa gratuita. Enquanto não houver decisão, só o `--dry-run` funciona.⟩
+**Decisão registrada em 23.09.2026: o repositório é público.** `raw.githubusercontent.com` não
+serve arquivo de repositório privado sem token, e a Meta acessa sem token. O que fica visível é a
+arte, a legenda e o código — conteúdo que vai ao ar de qualquer forma. As fotos de vistoria não
+vão: `data/ativos/` está no `.gitignore`.
 """
 
 from __future__ import annotations

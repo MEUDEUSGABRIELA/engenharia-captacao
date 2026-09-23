@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from collections import Counter
 from datetime import date
@@ -25,9 +26,36 @@ from .publicacao import url_publica
 VIDEO = {".mp4", ".mov"}
 
 
+def _conferir_ativos_versionados() -> list[str]:
+    """`data/ativos/` é material de cliente e o repositório é público: nada ali pode estar versionado.
+
+    Apagar num commit seguinte não resolve — o histórico guarda. Por isso a conferência roda antes
+    de cada publicação, no workflow, e não só na máquina de quem escreveu.
+    """
+    try:
+        resultado = subprocess.run(
+            ["git", "ls-files", "data/ativos"],
+            cwd=config.RAIZ,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return []  # sem git por perto não há índice a conferir
+    if resultado.returncode != 0:
+        return []
+    permitidos = {"data/ativos/LEIA-ME.md"}
+    return [
+        f"material de cliente versionado num repositório público: {caminho} "
+        "(apagar no commit seguinte não basta — o histórico guarda)"
+        for caminho in resultado.stdout.split()
+        if caminho not in permitidos
+    ]
+
+
 def _conferir_pauta_inteira() -> int:
     posts = carregar()
-    achados = qa.conferir_pauta(posts)
+    achados = qa.conferir_pauta(posts) + _conferir_ativos_versionados()
     if achados:
         print("Achados na pauta:")
         for achado in achados:

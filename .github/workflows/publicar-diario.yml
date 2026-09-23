@@ -51,7 +51,7 @@ jobs:
           if [ -d "data/saida/$DATA" ]; then
             git config user.name "motor-de-pauta"
             git config user.email "motor-de-pauta@users.noreply.github.com"
-            git add -f "data/saida/$DATA"
+            git add "data/saida/$DATA"
             git diff --cached --quiet || git commit -m "arte do dia $DATA"
             git push
           fi
@@ -68,7 +68,7 @@ jobs:
       - name: Registrar o que foi publicado
         if: ${{ github.event.inputs.dry_run != 'true' }}
         run: |
-          git add -f "data/saida/$DATA" data/pauta/calendario.yaml
+          git add "data/saida/$DATA" data/pauta/calendario.yaml
           git diff --cached --quiet || git commit -m "log da publicação $DATA"
           git push
 
