@@ -5,12 +5,18 @@ buscar. Este arquivo trata do resto: para quem o perfil fala e o que ele pode of
 
 ## Praça
 
-Atuação: **Presidente Prudente/SP e região**. O endereço profissional registrado é em São Paulo
-capital — ver a pendência anotada em `kb/identidade.yaml`, que precisa de resposta antes de a copy
-prometer visita ou atendimento presencial com frequência.
+Atuação **regional**: Presidente Prudente/SP e região, com presença diária na cidade — confirmado
+pela responsável técnica em 23.09.2026. O endereço profissional registrado fica em São Paulo
+capital, que é onde os laudos são elaborados; a praça de captação é o oeste paulista.
 
-⟨PENDENTE: até quantos km você se desloca para vistoria? Define quais cidades entram nas hashtags
-locais e se cabe anunciar atendimento presencial na região⟩
+Como a presença é diária, a copy **pode** falar em visita e atendimento presencial na região.
+
+E **não pode** dizer "atuação nacional": dilui exatamente o que faz um perfil deste porte ser
+encontrado por quem contrata. Ver `kb/identidade.yaml`.
+
+⟨PENDENTE: até quantos km você se desloca para vistoria? Hoje as hashtags locais cobrem de
+Presidente Prudente a Marília, Assis, Dracena e Adamantina. Se o raio real for menor, vale
+encolher a lista; se for maior, acrescentar cidades⟩
 
 ## Segmentos e prioridade
 

@@ -40,6 +40,12 @@ Ele devolve quatro opções; escolhe-se a melhor e converte com `create-design-f
 É o que transforma diagrama em design. No post de PGR e PCMSO: fábrica para o PGR (o ambiente),
 estetoscópio para o PCMSO (a pessoa). O leitor entende antes de ler.
 
+### O que o rodapé da arte pode dizer
+
+Telefone, `@` e, se couber, **"Presidente Prudente e região"**. Nunca "atuação nacional": a
+captação é regional (ver `kb/identidade.yaml`), e dizer nacional dilui justamente o que faz um
+perfil deste porte ser encontrado por quem pode contratar.
+
 ### Conferir antes de aceitar
 
 Das quatro opções da primeira geração, uma veio **com subtítulo em inglês**. Sempre olhar as quatro

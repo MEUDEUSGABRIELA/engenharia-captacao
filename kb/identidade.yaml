@@ -42,10 +42,16 @@ rodape:
 
 praca:
   # Onde os clientes estão e para onde a copy e as hashtags apontam.
+  # Confirmado pela responsável técnica em 23.09.2026: o atendimento é REGIONAL, e ela está em
+  # Presidente Prudente diariamente. Isso valida as hashtags locais e libera a copy a falar em
+  # visita e atendimento presencial na região.
   atuacao: "Presidente Prudente/SP e região"
-  # ⟨PENDENTE: o endereço profissional registrado é em São Paulo capital (Rua Paes Leme, 215,
-  # Pinheiros), e os laudos são elaborados lá — enquanto a captação deste perfil é no oeste paulista.
-  # Não é contradição necessariamente, mas muda o que a copy pode prometer: dá para dizer
-  # "atendimento em Presidente Prudente e região"? Com que frequência você está na região para
-  # vistoria? A resposta define se as hashtags locais seguem como estão e se cabe falar em visita.⟩
+  escopo: regional
+  presenca: "diária em Presidente Prudente"
+  # O endereço profissional registrado fica em São Paulo capital e é onde os laudos são
+  # elaborados. Não é contradição: a praça de captação é o oeste paulista.
   endereco_registrado: "Rua Paes Leme, 215, conj. 1713 — Pinheiros — São Paulo/SP"
+  # Regra para a arte e para a copy, decorrente da decisão acima:
+  nao_dizer: >
+    "Atuação nacional". Dilui o que faz um perfil deste porte ser encontrado. Toda a estratégia e
+    as hashtags apontam para a região — a arte deve dizer "Presidente Prudente e região", ou nada.
