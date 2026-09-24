@@ -57,7 +57,7 @@ posts:
       certo:
         titulo: "Laudo antes da obra"
         texto: "Um engenheiro registra, com responsabilidade técnica, o que a edificação aguenta."
-    status: pendente
+    status: publicado  # 18120978454900834
     legenda: |
       Ninguém começa uma reforma pensando em documentação. O problema aparece depois, quando a obra já está andando e alguém pede um documento que precisava existir antes.
 
