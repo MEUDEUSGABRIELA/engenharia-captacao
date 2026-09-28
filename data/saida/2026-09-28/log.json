@@ -10,6 +10,9 @@
   "caracteres_legenda": 1197,
   "avisos": [],
   "achados": [],
-  "publicado": false,
-  "post_id": null
+  "publicado": true,
+  "post_id": "18132150418680111",
+  "urls": [
+    "https://raw.githubusercontent.com/MEUDEUSGABRIELA/engenharia-captacao/main/data/saida/2026-09-28/01-capa.jpg"
+  ]
 }

@@ -81,7 +81,7 @@ posts:
         rotulo: A EXCEÇÃO
         destaque: "Poucos são\ndispensados"
         texto: "MEI (1.8.1) e ME/EPP de grau 1 e 2 sem exposição declarada (1.8.4) — só do documento."
-    status: pendente
+    status: publicado  # 18132150418680111
     legenda: |
       "Minha empresa é pequena, isso não se aplica a mim."
 
