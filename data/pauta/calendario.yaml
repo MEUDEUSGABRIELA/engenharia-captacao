@@ -113,7 +113,7 @@ posts:
         rotulo: ESTRUTURAL
         destaque: "Não pode sair"
         texto: "Sustenta laje, viga ou o pavimento de cima — e quase nunca se anuncia. Em construção antiga, menos ainda."
-    status: pendente
+    status: publicado  # 18038003954851082
     legenda: |
       O erro mais caro de reforma cabe numa frase: derrubaram a parede errada.
 
