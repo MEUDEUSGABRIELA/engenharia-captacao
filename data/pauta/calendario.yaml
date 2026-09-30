@@ -130,7 +130,7 @@ posts:
     tema: "Vistoria de fissura: o que eu meço antes de dizer se é grave"
     titulo: "Nem toda fissura\né grave — mas é\no desenho dela\nque diz"
     ativo: "⟨PENDENTE: vídeo ou foto sua medindo uma fissura, em data/ativos/⟩"
-    status: pendente
+    status: publicado  # 18346936219270977
     legenda: |
       Antes de dizer se uma fissura é grave, eu olho três coisas: a direção (vertical, horizontal ou inclinada), a abertura, e se ela está parada ou ainda se movendo.
 
