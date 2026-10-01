@@ -1,0 +1,18 @@
+{
+  "data": "2026-10-01",
+  "pilar": "pergunta",
+  "segmento": "ambiental",
+  "formato": "estatico",
+  "tema": "Meu negócio precisa de licença ambiental?",
+  "arquivos": [
+    "01-capa.jpg"
+  ],
+  "caracteres_legenda": 831,
+  "avisos": [
+    "sem arte pronta em data/artes/2026-10-01/ — caiu para a geração em código",
+    "post sem visual nem foto — a capa saiu só com tipografia"
+  ],
+  "achados": [],
+  "publicado": false,
+  "post_id": null
+}
