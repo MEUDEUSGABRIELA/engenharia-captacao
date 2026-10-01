@@ -146,7 +146,7 @@ posts:
     formato: estatico
     tema: Meu negócio precisa de licença ambiental?
     titulo: "Meu negócio\nprecisa de licença\nambiental?\nTeste de 3\nperguntas"
-    status: pendente
+    status: publicado  # 17889790773454953
     legenda: |
       Três perguntas para saber se você deveria estar preocupado:
 
