@@ -1,0 +1,22 @@
+{
+  "data": "2026-10-02",
+  "pilar": "servico",
+  "segmento": "sst",
+  "formato": "carrossel",
+  "tema": "Laudo de insalubridade, para que serve e quando a empresa precisa",
+  "arquivos": [
+    "01-capa.jpg",
+    "02-tela.jpg",
+    "03-tela.jpg",
+    "04-tela.jpg",
+    "05-tela.jpg",
+    "06-tela.jpg"
+  ],
+  "caracteres_legenda": 861,
+  "avisos": [
+    "sem arte pronta em data/artes/2026-10-02/ — caiu para a geração em código"
+  ],
+  "achados": [],
+  "publicado": false,
+  "post_id": null
+}
