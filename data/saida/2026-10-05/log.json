@@ -14,7 +14,9 @@
     "07-tela.jpg"
   ],
   "caracteres_legenda": 810,
-  "avisos": [],
+  "avisos": [
+    "sem arte pronta em data/artes/2026-10-05/ — caiu para a geração em código"
+  ],
   "achados": [],
   "publicado": false,
   "post_id": null

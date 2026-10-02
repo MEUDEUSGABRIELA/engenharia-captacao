@@ -221,7 +221,7 @@ posts:
 
       Quer saber como está a sua antes de alguém aparecer? WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-06
+  - data: 2026-10-07
     pilar: erro-caro
     segmento: sst
     formato: reels
@@ -238,7 +238,7 @@ posts:
 
       Quer que eu olhe o seu? WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-07
+  - data: 2026-10-09
     pilar: bastidor
     segmento: civil
     formato: reels
@@ -255,7 +255,7 @@ posts:
 
       Precisa de acompanhamento técnico na sua obra? WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-08
+  - data: 2026-10-14
     pilar: pergunta
     segmento: civil
     formato: estatico
@@ -273,7 +273,7 @@ posts:
 
       Dúvida sobre um documento que te entregaram? Me chama: WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-09
+  - data: 2026-10-16
     pilar: servico
     segmento: civil
     formato: carrossel
@@ -302,15 +302,7 @@ posts:
 
       A etapa 1 já responde se o seu caso é simples ou não. WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-12
-    pilar: feriado
-    segmento: nenhum
-    formato: nenhum
-    tema: Feriado — nada no feed, só Stories
-    status: feriado
-    legenda: ""
-
-  - data: 2026-10-13
+  - data: 2026-10-19
     pilar: erro-caro
     segmento: civil
     formato: carrossel
@@ -335,7 +327,7 @@ posts:
 
       Vai fechar negócio? Me chama antes de assinar: WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-14
+  - data: 2026-10-21
     pilar: bastidor
     segmento: sst
     formato: reels
@@ -352,7 +344,7 @@ posts:
 
       Sua empresa nunca mediu? Esse é o ponto de partida. WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-15
+  - data: 2026-10-23
     pilar: pergunta
     segmento: sst
     formato: estatico
@@ -374,7 +366,7 @@ posts:
 
       Quer a situação real da sua empresa? WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-16
+  - data: 2026-10-26
     pilar: servico
     segmento: ambiental
     formato: carrossel
@@ -397,7 +389,7 @@ posts:
 
       Quer saber se o seu uso precisa? WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-19
+  - data: 2026-10-28
     pilar: alerta-legal
     segmento: civil
     formato: reels
@@ -417,7 +409,7 @@ posts:
 
       Aconteceu com você? Me chama hoje: WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-20
+  - data: 2026-10-30
     pilar: erro-caro
     segmento: sst
     formato: carrossel
@@ -440,7 +432,7 @@ posts:
 
       Quer conferir a validade de tudo de uma vez? WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-21
+  - data: 2026-11-04
     pilar: bastidor
     segmento: ambiental
     formato: reels
@@ -461,7 +453,7 @@ posts:
 
       Essa última parte é a que mais falta. Quer organizar isso na sua? WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-22
+  - data: 2026-11-06
     pilar: pergunta
     segmento: civil
     formato: estatico
@@ -477,7 +469,7 @@ posts:
 
       Me manda o seu caso no WhatsApp (18) 99641-8959 que eu te digo o que se aplica, e aí sim o orçamento faz sentido.
 
-  - data: 2026-10-23
+  - data: 2026-11-09
     pilar: servico
     segmento: sst
     formato: carrossel
@@ -505,7 +497,7 @@ posts:
 
   # --- A partir daqui entram os segmentos de perícia e avaliação de imóveis ---
 
-  - data: 2026-10-26
+  - data: 2026-11-11
     pilar: alerta-legal
     segmento: sst
     formato: carrossel
@@ -532,7 +524,7 @@ posts:
 
       Precisa de apoio técnico nessa hora? WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-27
+  - data: 2026-11-13
     pilar: erro-caro
     segmento: civil
     formato: carrossel
@@ -560,7 +552,7 @@ posts:
 
       Vai contratar? Me chama antes de assinar: WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-28
+  - data: 2026-11-16
     pilar: bastidor
     segmento: avaliacao
     formato: reels
@@ -579,7 +571,7 @@ posts:
 
       Precisa de um laudo de avaliação? WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-29
+  - data: 2026-11-18
     pilar: pergunta
     segmento: sst
     formato: estatico
@@ -599,7 +591,7 @@ posts:
 
       Quer organizar isso antes de virar processo? WhatsApp (18) 99641-8959.
 
-  - data: 2026-10-30
+  - data: 2026-11-23
     pilar: servico
     segmento: pericia
     formato: carrossel
@@ -632,15 +624,7 @@ posts:
 
       Advogado, quer conversar sobre um caso? WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-02
-    pilar: feriado
-    segmento: nenhum
-    formato: nenhum
-    tema: Finados — nada no feed
-    status: feriado
-    legenda: ""
-
-  - data: 2026-11-03
+  - data: 2026-11-25
     pilar: erro-caro
     segmento: avaliacao
     formato: carrossel
@@ -667,7 +651,7 @@ posts:
 
       Precisa saber o valor de verdade? WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-04
+  - data: 2026-11-27
     pilar: bastidor
     segmento: civil
     formato: reels
@@ -686,7 +670,7 @@ posts:
 
       Tem mancha voltando sempre no mesmo lugar? WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-05
+  - data: 2026-11-30
     pilar: pergunta
     segmento: pericia
     formato: estatico
@@ -708,7 +692,7 @@ posts:
 
       Advogado com dúvida técnica num caso: WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-06
+  - data: 2026-12-02
     pilar: servico
     segmento: sst
     formato: carrossel
@@ -732,7 +716,7 @@ posts:
 
       Quer avaliar como está a sua? WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-09
+  - data: 2026-12-04
     pilar: alerta-legal
     segmento: sst
     formato: carrossel
@@ -762,7 +746,7 @@ posts:
 
       Quer conferir sua operação em altura? WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-10
+  - data: 2026-12-07
     pilar: erro-caro
     segmento: pericia
     formato: carrossel
@@ -794,7 +778,7 @@ posts:
 
       Advogado, quer revisar os quesitos antes de protocolar? WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-11
+  - data: 2026-12-09
     pilar: bastidor
     segmento: ambiental
     formato: reels
@@ -819,7 +803,7 @@ posts:
 
       Quer uma visita técnica na sua? WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-12
+  - data: 2026-12-11
     pilar: pergunta
     segmento: avaliacao
     formato: estatico
@@ -839,7 +823,7 @@ posts:
 
       Me manda o caso no WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-13
+  - data: 2026-12-14
     pilar: servico
     segmento: civil
     formato: carrossel
@@ -867,7 +851,7 @@ posts:
 
       Vai construir ou ampliar? WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-16
+  - data: 2026-12-16
     pilar: alerta-legal
     segmento: ambiental
     formato: carrossel
@@ -893,7 +877,7 @@ posts:
 
       Se a resposta a qualquer uma for "não", me chama: WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-17
+  - data: 2026-12-18
     pilar: erro-caro
     segmento: sst
     formato: carrossel
@@ -919,7 +903,7 @@ posts:
 
       Quer organizar isso de uma vez? WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-18
+  - data: 2026-12-21
     pilar: bastidor
     segmento: civil
     formato: reels
@@ -938,7 +922,7 @@ posts:
 
       Vai reformar numa construção antiga? Me chama antes de comprar material: WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-19
+  - data: 2026-12-23
     pilar: pergunta
     segmento: civil
     formato: estatico
@@ -956,10 +940,3 @@ posts:
 
       Está pensando em ampliar? WhatsApp (18) 99641-8959.
 
-  - data: 2026-11-20
-    pilar: feriado
-    segmento: nenhum
-    formato: nenhum
-    tema: Consciência Negra — nada no feed
-    status: feriado
-    legenda: ""

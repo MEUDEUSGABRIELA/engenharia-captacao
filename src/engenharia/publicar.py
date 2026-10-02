@@ -113,6 +113,15 @@ def executar(dia: str, dry_run: bool, forcar: bool) -> int:
         print(f"{dia}: já publicado. Use --forcar para republicar.")
         return 0
 
+    # Trava de arte: o motor publica apenas o que a responsável técnica desenhou.
+    # A geração em código continua existindo para conferência local, mas foi reprovada para o
+    # feed — deixar que ela publicasse por falta de fila era o maior risco deste projeto.
+    if not (config.ARTES / dia).exists():
+        if not dry_run:
+            print(f"{dia}: sem arte em data/artes/{dia}/ — dia pulado, nada publicado.")
+            return 0
+        print(f"{dia}: SEM ARTE NA FILA. O que segue é só conferência — não seria publicado.")
+
     achados = qa.conferir_post(post)
     if achados:
         print(f"{dia}: pauta com problema:")

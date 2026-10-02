@@ -1,10 +1,13 @@
 name: publicar-diario
 
-# Roda de segunda a sexta. O horário do cron é UTC: 14:00 UTC = 11:00 em Brasília (UTC-3),
-# a janela recomendada para o público de empresa em kb/ e no calendário.
+# Roda segunda, quarta e sexta. O horário do cron é UTC: 14:00 UTC = 11:00 em Brasília (UTC-3).
+#
+# Era de segunda a sexta até 02.10.2026. Dez dias de publicação diária levaram o alcance de 95 para
+# 5 e geraram zero cliques no perfil: volume sem engajamento ensina o sistema que o conteúdo não
+# interessa. Três vezes por semana, com arte que a responsável técnica aprovou, vale mais que cinco.
 on:
   schedule:
-    - cron: "0 14 * * 1-5"
+    - cron: "0 14 * * 1,3,5"
   workflow_dispatch:
     inputs:
       data:
