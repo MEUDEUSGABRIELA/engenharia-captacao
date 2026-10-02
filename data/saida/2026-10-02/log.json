@@ -17,6 +17,14 @@
     "sem arte pronta em data/artes/2026-10-02/ — caiu para a geração em código"
   ],
   "achados": [],
-  "publicado": false,
-  "post_id": null
+  "publicado": true,
+  "post_id": "18112829921147168",
+  "urls": [
+    "https://raw.githubusercontent.com/MEUDEUSGABRIELA/engenharia-captacao/main/data/saida/2026-10-02/01-capa.jpg",
+    "https://raw.githubusercontent.com/MEUDEUSGABRIELA/engenharia-captacao/main/data/saida/2026-10-02/02-tela.jpg",
+    "https://raw.githubusercontent.com/MEUDEUSGABRIELA/engenharia-captacao/main/data/saida/2026-10-02/03-tela.jpg",
+    "https://raw.githubusercontent.com/MEUDEUSGABRIELA/engenharia-captacao/main/data/saida/2026-10-02/04-tela.jpg",
+    "https://raw.githubusercontent.com/MEUDEUSGABRIELA/engenharia-captacao/main/data/saida/2026-10-02/05-tela.jpg",
+    "https://raw.githubusercontent.com/MEUDEUSGABRIELA/engenharia-captacao/main/data/saida/2026-10-02/06-tela.jpg"
+  ]
 }
