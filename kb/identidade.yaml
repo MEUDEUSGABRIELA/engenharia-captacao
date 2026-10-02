@@ -48,6 +48,8 @@ praca:
   atuacao: "Presidente Prudente/SP e região"
   escopo: regional
   presenca: "diária em Presidente Prudente"
+  raio_km: 80  # confirmado em 02.10.2026, ao definir a segmentação do anúncio pago
+  cidades_alcance: "Presidente Prudente, Marília, Assis, Dracena, Adamantina e municípios entre elas"
   # O endereço profissional registrado fica em São Paulo capital e é onde os laudos são
   # elaborados. Não é contradição: a praça de captação é o oeste paulista.
   endereco_registrado: "Rua Paes Leme, 215, conj. 1713 — Pinheiros — São Paulo/SP"
