@@ -18,7 +18,7 @@ SST e perícia são B2B e não compram por anúncio de Instagram.
 | Objetivo | Engajamento → conversa no **WhatsApp** (click-to-WhatsApp) |
 | Orçamento | R$ 20/dia, 7 dias — **R$ 140 no total** |
 | Duração | 7 dias corridos, **sem mexer no meio** |
-| Localização | Presidente Prudente + 80 km (Marília, Assis, Dracena, Adamantina) |
+| Localização | **Presidente Prudente + 30 km** |
 | Idade | 28 a 60 |
 | Gênero | todos |
 | Segmentação detalhada | **deixar vazia** |
@@ -29,8 +29,13 @@ SST e perícia são B2B e não compram por anúncio de Instagram.
 de a Meta não conseguir otimizar. Geografia + idade já é o filtro que importa; o resto ela aprende
 com quem clica.
 
-**Risco da área grande:** 80 km dilui R$ 140. Se ao fim dos 7 dias o custo por conversa ficar alto,
-a primeira correção é **encolher para Presidente Prudente + 30 km**, não aumentar o orçamento.
+**Por que 30 km e não 80:** a responsável técnica atende até 80 km, mas R$ 140 espalhados nessa
+área entregam pouco em todo lugar. A campanha concentra onde a visita é mais fácil e o deslocamento
+não come o lucro. Decidido em 02.10.2026.
+
+**Se der certo, o caminho de crescimento é este, nesta ordem:** primeiro aumentar o orçamento com
+os mesmos 30 km; só depois ampliar o raio. Ampliar área e verba ao mesmo tempo impede saber qual
+mudança funcionou.
 
 ## Texto do anúncio
 
@@ -75,15 +80,54 @@ Olá, Gabriela! Vi o anúncio sobre vistoria de recebimento de imóvel e quero s
 
 Ela identifica a origem do contato sem precisar perguntar.
 
-## A arte
+## Briefing da arte
 
-**Não reaproveitar post orgânico.** Anúncio tem oferta; post tem conteúdo.
+**Anúncio não é post.** Post entrega conteúdo e pede atenção; anúncio interrompe alguém que não
+pediu nada e precisa fazer uma oferta em dois segundos. Reaproveitar arte de post é o erro mais
+comum e o mais caro, porque aqui o alcance é comprado.
 
-- Formato 1080 × 1350, o mesmo que a responsável técnica já domina
-- Uma pessoa recebendo chave, ou prancheta de vistoria em apartamento novo e vazio
-- Texto na arte curto: *"Vai receber seu imóvel novo?"* e *"Vistoria antes de assinar"*
-- Marca e CREA no rodapé, sem telefone — o botão do anúncio já leva ao WhatsApp
-- **Sem "atuação nacional"**
+### A quem a arte fala
+
+Uma pessoa que vai pegar a chave de um imóvel novo nas próximas semanas. Ela está ansiosa,
+empolgada e com medo de assinar algo errado. Não sabe que existe vistoria de entrega — e, se
+soubesse, não saberia que pode contratar.
+
+A arte tem um único trabalho: fazer essa pessoa pensar *"espera, eu ia assinar sem conferir?"*
+
+### Conceito principal
+
+**Texto grande na arte:** `Vai receber seu imóvel novo?`
+
+**Linha de apoio, menor:** `Não assine o recebimento antes da vistoria.`
+
+**Selo ou faixa:** `Relatório fotográfico para a construtora`
+
+**Imagem:** chave na mão sobre planta ou porta de apartamento novo; ou prancheta de vistoria num
+ambiente vazio recém-entregue; ou a própria responsável técnica em apartamento novo, com prancheta.
+A foto de estúdio dela (`gabriela-campo-04`, fundo liso) serve recortada sobre esse cenário.
+
+**Formato:** 1080 × 1350 px.
+
+### Regras da peça
+
+- **Sem telefone na arte.** O botão do anúncio já leva ao WhatsApp; telefone escrito rouba o clique
+  do botão, e é o clique no botão que a Meta mede e otimiza.
+- **Pouco texto.** Três blocos no máximo. Arte carregada de texto performa pior em anúncio, mesmo
+  sem a antiga regra dos 20%.
+- **Marca e CREA no rodapé**, discretos. Credibilidade sem roubar a manchete.
+- **Sem "atuação nacional"** — a campanha é de 30 km.
+- Nada de promessa de resultado: o relatório é entregável, a correção pela construtora não.
+
+### Dois conceitos alternativos, para testar depois
+
+Rodar os três de uma vez com R$ 20/dia não funciona: o orçamento se divide e nenhum aprende. Guarde
+estes para a segunda rodada, se a primeira converter.
+
+**B — o custo do erro.** Foto de defeito real (infiltração, piso desnivelado, esquadria torta) com o
+texto `Isso vira problema seu depois que você assina.` Ataca pelo medo em vez da oportunidade.
+
+**C — a lista.** `O que eu confiro na entrega do seu imóvel` com quatro itens curtos e ícones.
+Formato que ela já domina, e funciona com quem quer saber antes de decidir.
 
 ## O que a copy não pode dizer
 
