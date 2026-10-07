@@ -1,0 +1,19 @@
+{
+  "data": "2026-10-07",
+  "pilar": "erro-caro",
+  "segmento": "sst",
+  "formato": "reels",
+  "tema": "PGR genérico comprado pronto não protege",
+  "arquivos": [
+    "01-capa.jpg"
+  ],
+  "caracteres_legenda": 800,
+  "avisos": [
+    "sem arte pronta em data/artes/2026-10-07/ — caiu para a geração em código",
+    "ativo pendente — a arte saiu de template, sem foto real",
+    "post sem visual nem foto — a capa saiu só com tipografia"
+  ],
+  "achados": [],
+  "publicado": false,
+  "post_id": null
+}
