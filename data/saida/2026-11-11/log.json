@@ -1,0 +1,23 @@
+{
+  "data": "2026-11-11",
+  "pilar": "alerta-legal",
+  "segmento": "sst",
+  "formato": "carrossel",
+  "tema": "Acidente de trabalho, as primeiras 24 horas da empresa",
+  "arquivos": [
+    "01-capa.jpg",
+    "02-tela.jpg",
+    "03-tela.jpg",
+    "04-tela.jpg",
+    "05-tela.jpg",
+    "06-tela.jpg",
+    "07-tela.jpg"
+  ],
+  "caracteres_legenda": 1053,
+  "avisos": [
+    "sem arte pronta em data/artes/2026-11-11/ — caiu para a geração em código"
+  ],
+  "achados": [],
+  "publicado": false,
+  "post_id": null
+}
