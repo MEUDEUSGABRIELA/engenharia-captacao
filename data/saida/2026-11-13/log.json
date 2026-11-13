@@ -1,0 +1,22 @@
+{
+  "data": "2026-11-13",
+  "pilar": "erro-caro",
+  "segmento": "civil",
+  "formato": "carrossel",
+  "tema": "Contratar obra sem projeto e sem contrato",
+  "arquivos": [
+    "01-capa.jpg",
+    "02-tela.jpg",
+    "03-tela.jpg",
+    "04-tela.jpg",
+    "05-tela.jpg",
+    "06-tela.jpg"
+  ],
+  "caracteres_legenda": 922,
+  "avisos": [
+    "sem arte pronta em data/artes/2026-11-13/ — caiu para a geração em código"
+  ],
+  "achados": [],
+  "publicado": false,
+  "post_id": null
+}
